@@ -1,4 +1,4 @@
-# Bookworm
+# Bookworm Vision Statement
 
 The book-ordering system (Bookworm) will allow customers to discover and purchase new and bestselling books, as well as sell their previously owned books regardless of their location
 
