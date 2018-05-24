@@ -1,4 +1,4 @@
-# Vision Statement
+# Bookworm
 
 The book-ordering system (Bookworm) will allow customers to discover and purchase new and bestselling books, as well as sell their previously owned books regardless of their location. Similar to shopping in a physical bookstore, customers will be able to browse from an extensive selection of books covering a wide range of topics. However, unlike most physical bookstores, Bookworm will provide helpful suggestions from its exclusive ‘shop assistant’ book recommendation service as well as provide an outlet for customers to sell their gently used books.
 
