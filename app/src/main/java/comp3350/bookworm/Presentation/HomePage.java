@@ -1,5 +1,6 @@
 package comp3350.bookworm.Presentation;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -7,6 +8,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.widget.TextView;
 
+import comp3350.bookworm.BusinessLogic.AccountManager;
+import comp3350.bookworm.Objects.Account;
 import comp3350.bookworm.R;
 
 public class HomePage extends AppCompatActivity {
@@ -19,14 +22,16 @@ public class HomePage extends AppCompatActivity {
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
-                case R.id.navigation_bookshelf:
-                    mTextMessage.setText(R.string.title_bookshelf);
+                case R.id.navigation_library:
+//                    mTextMessage.setText(R.string.title_bookshelf);
+                    return true;
+                case R.id.navigation_discover:
+//                    mTextMessage.setText(R.string.title_account);
                     return true;
                 case R.id.navigation_account:
-                    mTextMessage.setText(R.string.title_account);
-                    return true;
-                case R.id.navigation_shoppingcart:
-                    mTextMessage.setText(R.string.title_shoppingcart);
+//                    mTextMessage.setText(R.string.title_shoppingcart);
+                    startActivity(new Intent(HomePage.this, AccountActivity.class));
+                    finish();
                     return true;
             }
             return false;
