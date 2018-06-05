@@ -17,15 +17,16 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="comp3350.bookworm.Presentation.HomePage" />
-        <activity android:name="comp3350.bookworm.Presentation.LoginActivity" >
+        <activity android:name="comp3350.bookworm.Presentation.HomePage" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="comp3350.bookworm.Presentation.LoginActivity" />
         <activity android:name="comp3350.bookworm.Presentation.SignupActivity" />
+        <activity android:name="comp3350.bookworm.Presentation.AccountActivity" />
         <activity
             android:name="comp3350.bookworm.BookDescription"
             android:label="@string/title_activity_book_description"
