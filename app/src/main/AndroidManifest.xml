@@ -16,13 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Presentation.LoginActivity"></activity>
+        <activity android:name=".Presentation.LoginActivity">
+        </activity>
         <activity android:name=".Presentation.SignupActivity" />
-        <activity android:name=".Presentation.AccountActivity" />
-        <activity
-            android:name=".BookDescription"
-            android:label="@string/title_activity_book_description"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Presentation.AccountActivity"></activity>
     </application>
 
 </manifest>
