@@ -11,4 +11,9 @@
     <string name="title_discover">Discover</string>
     <string name="visitor_login_prompt">Login is required to have a fully access to Bookworm</string>
     <string name="login_validation_failed">Invalid username or password!</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="create_account">Create Account</string>
+    <string name="already_a_member_login">Already a member? Login</string>
 </resources>
