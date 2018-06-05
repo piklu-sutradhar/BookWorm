@@ -1,6 +1,7 @@
 package comp3350.bookworm.Persistence.stubs;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import comp3350.bookworm.Objects.Book;
 import comp3350.bookworm.Persistence.BookListPersistence;
@@ -37,5 +38,22 @@ public class BookListStub implements BookListPersistence {
             }
         }
         return bookToreturn;
+    }
+
+    public List<Book> getBookList() {
+        return bookList;
+    }
+
+    public void deleteBook(String bookName)
+    {
+        boolean deleted = false;
+        for (int i = 0; i < bookList.size() && deleted == false; i++)
+        {
+            if(bookList.get(i).getBookName().equalsIgnoreCase(bookName))
+            {
+                bookList.remove(i);
+                deleted = true;
+            }
+        }
     }
 }
