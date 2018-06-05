@@ -24,13 +24,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="comp3350.bookworm.Presentation.LoginActivity" />
+        <activity android:name="comp3350.bookworm.Presentation.LoginActivity" >
+        </activity>
         <activity android:name="comp3350.bookworm.Presentation.SignupActivity" />
         <activity android:name="comp3350.bookworm.Presentation.AccountActivity" />
-        <activity
-            android:name="comp3350.bookworm.BookDescription"
-            android:label="@string/title_activity_book_description"
-            android:theme="@style/AppTheme.NoActionBar" />
 
         <meta-data
             android:name="android.support.VERSION"

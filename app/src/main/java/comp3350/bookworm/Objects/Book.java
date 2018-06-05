@@ -2,7 +2,7 @@ package comp3350.bookworm.Objects;
 
 public class Book {
     // Hold the info of each book
-<<<<<<< HEAD
+//<<<<<<< HEAD
     String Author;
 
     String Title;
@@ -42,6 +42,6 @@ public class Book {
         return bookName + authorName + bookPreview + bookPrice;
     }
 
-=======
->>>>>>> 8fd97f95d5edea566b987648f97ee42f0dd23f73
+//=======
+//>>>>>>> 8fd97f95d5edea566b987648f97ee42f0dd23f73
 }

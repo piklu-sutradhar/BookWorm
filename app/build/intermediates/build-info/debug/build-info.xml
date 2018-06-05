@@ -5,24 +5,23 @@
     build-mode="FULL"
     density="xxhdpi"
     format="10"
-    ir-eligibility="R_CLASS_CHANGE"
     plugin-version="3.1.2"
-    timestamp="1528169456301"
+    timestamp="1528174823282"
     token="-7251952336326073423"
-    verifier="COLD_SWAP_REQUESTED" >
+    verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="2710" />
+        duration="2952" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="1018" />
+        duration="1083" />
     <task
         name="verifier"
-        duration="304" />
+        duration="967" />
 
     <artifact
         location="C:\Users\sutra\Desktop\piklu&apos;s_data\Current Courses\Comp3350\Project\codeX\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
@@ -49,13 +48,13 @@
         location="C:\Users\sutra\Desktop\piklu&apos;s_data\Current Courses\Comp3350\Project\codeX\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
         type="SPLIT" />
     <artifact
-        location="C:\Users\sutra\Desktop\piklu&apos;s_data\Current Courses\Comp3350\Project\codeX\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+        location="C:\Users\sutra\Desktop\piklu&apos;s_data\Current Courses\Comp3350\Project\codeX\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
         type="SPLIT" />
     <artifact
         location="C:\Users\sutra\Desktop\piklu&apos;s_data\Current Courses\Comp3350\Project\codeX\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
         type="SPLIT" />
     <artifact
-        location="C:\Users\sutra\Desktop\piklu&apos;s_data\Current Courses\Comp3350\Project\codeX\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+        location="C:\Users\sutra\Desktop\piklu&apos;s_data\Current Courses\Comp3350\Project\codeX\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
         type="SPLIT" />
     <artifact
         location="C:\Users\sutra\Desktop\piklu&apos;s_data\Current Courses\Comp3350\Project\codeX\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
@@ -66,9 +65,8 @@
 
     <build
         build-mode="FULL"
-        ir-eligibility="R_CLASS_CHANGE"
-        timestamp="1528169456301"
-        verifier="COLD_SWAP_REQUESTED" >
+        timestamp="1528174823282"
+        verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\sutra\Desktop\piklu&apos;s_data\Current Courses\Comp3350\Project\codeX\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
             type="SPLIT" />
@@ -94,13 +92,13 @@
             location="C:\Users\sutra\Desktop\piklu&apos;s_data\Current Courses\Comp3350\Project\codeX\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\sutra\Desktop\piklu&apos;s_data\Current Courses\Comp3350\Project\codeX\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+            location="C:\Users\sutra\Desktop\piklu&apos;s_data\Current Courses\Comp3350\Project\codeX\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\sutra\Desktop\piklu&apos;s_data\Current Courses\Comp3350\Project\codeX\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\sutra\Desktop\piklu&apos;s_data\Current Courses\Comp3350\Project\codeX\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            location="C:\Users\sutra\Desktop\piklu&apos;s_data\Current Courses\Comp3350\Project\codeX\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\sutra\Desktop\piklu&apos;s_data\Current Courses\Comp3350\Project\codeX\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
