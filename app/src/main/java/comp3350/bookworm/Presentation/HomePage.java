@@ -31,7 +31,6 @@ public class HomePage extends AppCompatActivity {
                 case R.id.navigation_account:
 //                    mTextMessage.setText(R.string.title_shoppingcart);
                     startActivity(new Intent(HomePage.this, AccountActivity.class));
-                    finish();
                     return true;
             }
             return false;

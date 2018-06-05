@@ -6,14 +6,18 @@ import android.content.SharedPreferences;
 import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import comp3350.bookworm.Application.Service;
 import comp3350.bookworm.BusinessLogic.AccountManager;
+import comp3350.bookworm.BusinessLogic.InvalidCredentialException;
 import comp3350.bookworm.Objects.Account;
+import comp3350.bookworm.Persistence.stubs.LoginUserPersistenceStub;
 import comp3350.bookworm.R;
 
 //
@@ -40,20 +44,15 @@ public class LoginActivity extends AppCompatActivity {
                 String username = ((EditText)  findViewById(R.id.login_username)).getText().toString();
                 String password = ((EditText)  findViewById(R.id.login_password)).getText().toString();
                 Account account = new Account(username, password);
-                if(accountManager.validateAccount(account)) {
-                    SharedPreferences preferences = getSharedPreferences("AccountInfo", 0);
-                    SharedPreferences.Editor editor = preferences.edit();
-                    editor.putString("Username",username);
-//                    editor.putString("Password",password);
-                    editor.putBoolean("Logged_in",true);
-                    editor.apply();
 
+                try {
+                    accountManager.login(account);
                     startActivity(new Intent(LoginActivity.this, HomePage.class));
                     finish();
                 }
-                else {
-                    Context context = getApplicationContext();
+                catch (InvalidCredentialException e) {
                     int duration = Toast.LENGTH_LONG;
+                    Context context = getApplicationContext();
 
                     Toast toast = Toast.makeText(context, R.string.login_validation_failed, duration);
                     toast.show();
