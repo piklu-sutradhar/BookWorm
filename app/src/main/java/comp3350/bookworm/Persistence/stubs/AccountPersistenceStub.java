@@ -3,6 +3,7 @@ package comp3350.bookworm.Persistence.stubs;
 import java.util.ArrayList;
 import java.util.List;
 
+import comp3350.bookworm.BusinessLogic.DuplicateUsernameException;
 import comp3350.bookworm.Objects.Account;
 import comp3350.bookworm.Persistence.AccountPersistence;
 
@@ -34,7 +35,12 @@ public class AccountPersistenceStub implements AccountPersistence {
     }
 
     @Override
-    public Account insertAccount(Account currentAccount) {
+    public Account insertAccount(Account currentAccount) throws DuplicateUsernameException {
+
+        for(Account account : accounts) {
+            if (account.getUserName().equals(currentAccount.getUserName()))
+                throw new DuplicateUsernameException();
+        }
         accounts.add(currentAccount);
         return currentAccount;
     }

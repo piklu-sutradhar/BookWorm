@@ -10,8 +10,10 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import comp3350.bookworm.Application.Service;
 import comp3350.bookworm.BusinessLogic.AccountManager;
 import comp3350.bookworm.Objects.Account;
+import comp3350.bookworm.Persistence.stubs.LoginUserPersistenceStub;
 import comp3350.bookworm.R;
 
 public class AccountActivity extends AppCompatActivity {
@@ -22,13 +24,10 @@ public class AccountActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_account);
 
-        SharedPreferences preferences = getSharedPreferences("UserInfo", 0);
-
-
-        if(preferences.getBoolean("Logged_in", false)) {
+        if(accountManager.anyLoggedInUser()) {
             findViewById(R.id.account_visitor).setVisibility(View.INVISIBLE);
             findViewById(R.id.account_logined).setVisibility(View.VISIBLE);
-            ((TextView)findViewById(R.id.account_uername)).setText(preferences.getString("Username", ""));
+            ((TextView)findViewById(R.id.account_uername)).setText(accountManager.getLoggedInUsername());
         }
         else {
             findViewById(R.id.account_logined).setVisibility(View.INVISIBLE);
@@ -39,6 +38,16 @@ public class AccountActivity extends AppCompatActivity {
         loginBtn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 startActivity(new Intent(AccountActivity.this, LoginActivity.class));
+                finish();
+            }
+        });
+
+        final Button logoutBtn = (Button) findViewById(R.id.btn_account_logout);
+        logoutBtn.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+
+                accountManager.logout();
+                startActivity(new Intent(AccountActivity.this, HomePage.class));
                 finish();
             }
         });
