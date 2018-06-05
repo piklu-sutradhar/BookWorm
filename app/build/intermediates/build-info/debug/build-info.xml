@@ -5,34 +5,23 @@
     build-mode="COLD"
     density="xxhdpi"
     format="10"
-    ir-eligibility="CLASS_ADDED"
     plugin-version="3.1.2"
-    timestamp="1528236857278"
+    timestamp="1528237405290"
     token="-7251952336326073423"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="2381" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="291" />
+        duration="0" />
     <task
         name="verifier"
-        duration="141" />
-
-    <artifact
-        location="C:\Users\sutra\Desktop\piklu&apos;s_data\Current Courses\Comp3350\Project\codeX\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\sutra\Desktop\piklu&apos;s_data\Current Courses\Comp3350\Project\codeX\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\sutra\Desktop\piklu&apos;s_data\Current Courses\Comp3350\Project\codeX\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
-        type="SPLIT" />
+        duration="0" />
 
     <build
         build-mode="FULL"
@@ -93,5 +82,9 @@
             location="C:\Users\sutra\Desktop\piklu&apos;s_data\Current Courses\Comp3350\Project\codeX\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
             type="SPLIT" />
     </build>
+    <build
+        build-mode="COLD"
+        timestamp="1528237405290"
+        verifier="COLD_SWAP_REQUESTED" />
 
 </instant-run>

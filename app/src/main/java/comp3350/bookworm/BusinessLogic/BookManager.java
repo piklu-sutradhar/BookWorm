@@ -32,5 +32,9 @@ public class BookManager {
     {
         bookListStub.deleteBook(bookName);
     }
+    public List<Book> GetBookList()
+    {
+       return bookListStub.getBookList();
+    }
 
 }
