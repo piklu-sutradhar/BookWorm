@@ -3,11 +3,8 @@ package comp3350.bookworm.Objects;
 public class Book {
     // Hold the info of each book
     String Author;
-
     String Title;
-
     String publishYear;
-
 
     private final String bookName;
     private final String authorName;
