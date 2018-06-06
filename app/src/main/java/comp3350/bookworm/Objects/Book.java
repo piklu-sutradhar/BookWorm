@@ -37,7 +37,7 @@ public class Book {
         return bookPrice;
     }
 
-    public String toStirng() {
+    public String toString() {
         return bookName + authorName + bookPreview + bookPrice;
     }
 
