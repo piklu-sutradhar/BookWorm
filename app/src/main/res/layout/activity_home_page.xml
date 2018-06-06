@@ -36,22 +36,17 @@
 
     <SearchView
         android:id="@+id/Search_bar"
-        android:layout_width="365dp"
+        android:layout_width="match_parent"
         android:layout_height="37dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginStart="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
         android:layout_marginTop="16dp"
-        android:clickable="true"
-        android:focusable="true"
-        android:gravity="top"
         android:orientation="horizontal"
-        android:visibility="visible"
+        android:focusable="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:padding="8dp"
-        tools:queryHint="Search for Books." />
+        android:queryHint="Search for books"
+        android:iconifiedByDefault="false"/>
 
 </android.support.constraint.ConstraintLayout>

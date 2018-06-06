@@ -2,10 +2,12 @@ package comp3350.bookworm.Presentation;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+import android.widget.SearchView;
 import android.widget.TextView;
 
 import comp3350.bookworm.BusinessLogic.AccountManager;
@@ -45,6 +47,15 @@ public class HomePage extends AppCompatActivity {
         mTextMessage = (TextView) findViewById(R.id.home_page_message);
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.home_page_navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+
+        final SearchView searchView = (SearchView) findViewById(R.id.Search_bar);
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                searchView.clearFocus();
+            }
+        }, 300);
+
     }
 
 }
