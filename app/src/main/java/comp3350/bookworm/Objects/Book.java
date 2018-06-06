@@ -3,11 +3,8 @@ package comp3350.bookworm.Objects;
 public class Book {
     // Hold the info of each book
     String Author;
-
     String Title;
-
     String publishYear;
-
 
     private final String bookName;
     private final String authorName;
@@ -37,7 +34,7 @@ public class Book {
         return bookPrice;
     }
 
-    public String toStirng() {
+    public String toString() {
         return bookName + authorName + bookPreview + bookPrice;
     }
 

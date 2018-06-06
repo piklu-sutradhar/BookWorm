@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="8dp">
+
+    <ImageView
+        android:id="@+id/bookCover"
+        android:layout_width="98dp"
+        android:layout_height="67dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/default_book_icon" />
+
+    <LinearLayout
+        android:id="@+id/bookInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="16dp">
+        <TextView
+            android:id="@+id/bookName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="bookName"
+            android:layout_marginBottom="4dp"/>
+        <TextView
+            android:id="@+id/authorName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="authorName"
+            android:layout_marginBottom="4dp"/>
+        <TextView
+            android:id="@+id/bookPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="bookPrice"
+            android:layout_marginBottom="4dp"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -40,7 +40,7 @@ public class BookListStub implements BookListPersistence {
         return bookToreturn;
     }
 
-    public List<Book> getBookList() {
+    public ArrayList<Book> getBookList() {
         return bookList;
     }
 
