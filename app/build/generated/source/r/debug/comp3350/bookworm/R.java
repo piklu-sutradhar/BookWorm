@@ -1806,7 +1806,7 @@ public final class R {
      * <tr><td>barrier</td><td>2</td><td></td></tr>
      * <tr><td>chains</td><td>4</td><td></td></tr>
      * <tr><td>dimensions</td><td>8</td><td></td></tr>
-     * <tr><td>direct</td><td>1</td><td></td></tr>
+     * <tr><td>direct</td><td>1</td><td>for now only direct & barriers</td></tr>
      * <tr><td>none</td><td>0</td><td></td></tr>
      * <tr><td>standard</td><td>3</td><td></td></tr>
      * </table>
@@ -3419,67 +3419,67 @@ public final class R {
     public static final int ifRoom=0x7f080052;
     public static final int image=0x7f080053;
     public static final int info=0x7f080054;
-    public static final int input_name=0x7f080055;
-    public static final int invisible=0x7f080056;
-    public static final int item_touch_helper_previous_elevation=0x7f080057;
-    public static final int largeLabel=0x7f080058;
-    public static final int left=0x7f080059;
-    public static final int line1=0x7f08005a;
-    public static final int line3=0x7f08005b;
-    public static final int link_login=0x7f08005c;
-    public static final int link_signup=0x7f08005d;
-    public static final int listMode=0x7f08005e;
-    public static final int list_item=0x7f08005f;
-    public static final int login_password=0x7f080060;
-    public static final int login_username=0x7f080061;
-    public static final int masked=0x7f080062;
-    public static final int media_actions=0x7f080063;
-    public static final int middle=0x7f080064;
-    public static final int mini=0x7f080065;
-    public static final int multiply=0x7f080066;
-    public static final int navigation_account=0x7f080067;
-    public static final int navigation_discover=0x7f080068;
-    public static final int navigation_header_container=0x7f080069;
-    public static final int navigation_library=0x7f08006a;
-    public static final int never=0x7f08006b;
-    public static final int none=0x7f08006c;
-    public static final int normal=0x7f08006d;
-    public static final int notification_background=0x7f08006e;
-    public static final int notification_main_column=0x7f08006f;
-    public static final int notification_main_column_container=0x7f080070;
-    public static final int packed=0x7f080071;
-    public static final int parallax=0x7f080072;
-    public static final int parent=0x7f080073;
-    public static final int parentPanel=0x7f080074;
-    public static final int percent=0x7f080075;
-    public static final int pin=0x7f080076;
-    public static final int progress_circular=0x7f080077;
-    public static final int progress_horizontal=0x7f080078;
-    public static final int radio=0x7f080079;
-    public static final int right=0x7f08007a;
-    public static final int right_icon=0x7f08007b;
-    public static final int right_side=0x7f08007c;
-    public static final int screen=0x7f08007d;
-    public static final int scroll=0x7f08007e;
-    public static final int scrollIndicatorDown=0x7f08007f;
-    public static final int scrollIndicatorUp=0x7f080080;
-    public static final int scrollView=0x7f080081;
-    public static final int scrollable=0x7f080082;
-    public static final int search_badge=0x7f080083;
-    public static final int search_bar=0x7f080084;
-    public static final int search_button=0x7f080085;
-    public static final int search_close_btn=0x7f080086;
-    public static final int search_edit_frame=0x7f080087;
-    public static final int search_go_btn=0x7f080088;
-    public static final int search_mag_icon=0x7f080089;
-    public static final int search_plate=0x7f08008a;
-    public static final int search_src_text=0x7f08008b;
-    public static final int search_voice_btn=0x7f08008c;
-    public static final int select_dialog_listview=0x7f08008d;
-    public static final int shortcut=0x7f08008e;
-    public static final int showCustom=0x7f08008f;
-    public static final int showHome=0x7f080090;
-    public static final int showTitle=0x7f080091;
+    public static final int invisible=0x7f080055;
+    public static final int item_touch_helper_previous_elevation=0x7f080056;
+    public static final int largeLabel=0x7f080057;
+    public static final int left=0x7f080058;
+    public static final int line1=0x7f080059;
+    public static final int line3=0x7f08005a;
+    public static final int link_login=0x7f08005b;
+    public static final int link_signup=0x7f08005c;
+    public static final int listMode=0x7f08005d;
+    public static final int list_item=0x7f08005e;
+    public static final int login_password=0x7f08005f;
+    public static final int login_username=0x7f080060;
+    public static final int masked=0x7f080061;
+    public static final int media_actions=0x7f080062;
+    public static final int middle=0x7f080063;
+    public static final int mini=0x7f080064;
+    public static final int multiply=0x7f080065;
+    public static final int navigation_account=0x7f080066;
+    public static final int navigation_discover=0x7f080067;
+    public static final int navigation_header_container=0x7f080068;
+    public static final int navigation_library=0x7f080069;
+    public static final int never=0x7f08006a;
+    public static final int none=0x7f08006b;
+    public static final int normal=0x7f08006c;
+    public static final int notification_background=0x7f08006d;
+    public static final int notification_main_column=0x7f08006e;
+    public static final int notification_main_column_container=0x7f08006f;
+    public static final int packed=0x7f080070;
+    public static final int parallax=0x7f080071;
+    public static final int parent=0x7f080072;
+    public static final int parentPanel=0x7f080073;
+    public static final int percent=0x7f080074;
+    public static final int pin=0x7f080075;
+    public static final int progress_circular=0x7f080076;
+    public static final int progress_horizontal=0x7f080077;
+    public static final int radio=0x7f080078;
+    public static final int right=0x7f080079;
+    public static final int right_icon=0x7f08007a;
+    public static final int right_side=0x7f08007b;
+    public static final int screen=0x7f08007c;
+    public static final int scroll=0x7f08007d;
+    public static final int scrollIndicatorDown=0x7f08007e;
+    public static final int scrollIndicatorUp=0x7f08007f;
+    public static final int scrollView=0x7f080080;
+    public static final int scrollable=0x7f080081;
+    public static final int search_badge=0x7f080082;
+    public static final int search_bar=0x7f080083;
+    public static final int search_button=0x7f080084;
+    public static final int search_close_btn=0x7f080085;
+    public static final int search_edit_frame=0x7f080086;
+    public static final int search_go_btn=0x7f080087;
+    public static final int search_mag_icon=0x7f080088;
+    public static final int search_plate=0x7f080089;
+    public static final int search_src_text=0x7f08008a;
+    public static final int search_voice_btn=0x7f08008b;
+    public static final int select_dialog_listview=0x7f08008c;
+    public static final int shortcut=0x7f08008d;
+    public static final int showCustom=0x7f08008e;
+    public static final int showHome=0x7f08008f;
+    public static final int showTitle=0x7f080090;
+    public static final int signup_email=0x7f080091;
     public static final int signup_password=0x7f080092;
     public static final int signup_username=0x7f080093;
     public static final int smallLabel=0x7f080094;
@@ -3645,27 +3645,29 @@ public final class R {
     public static final int bottom_sheet_behavior=0x7f0d0022;
     public static final int character_counter_pattern=0x7f0d0023;
     public static final int create_account=0x7f0d0024;
-    public static final int email=0x7f0d0025;
-    public static final int login_validation_failed=0x7f0d0026;
-    public static final int name=0x7f0d0027;
-    public static final int password=0x7f0d0028;
-    public static final int password_toggle_content_description=0x7f0d0029;
-    public static final int path_password_eye=0x7f0d002a;
-    public static final int path_password_eye_mask_strike_through=0x7f0d002b;
-    public static final int path_password_eye_mask_visible=0x7f0d002c;
-    public static final int path_password_strike_through=0x7f0d002d;
-    public static final int search_menu_title=0x7f0d002e;
-    public static final int status_bar_notification_info_overflow=0x7f0d002f;
-    public static final int title_account=0x7f0d0030;
-    public static final int title_activity_main_page=0x7f0d0031;
-    public static final int title_bookshelf=0x7f0d0032;
-    public static final int title_dashboard=0x7f0d0033;
-    public static final int title_discover=0x7f0d0034;
-    public static final int title_home=0x7f0d0035;
-    public static final int title_library=0x7f0d0036;
-    public static final int title_notifications=0x7f0d0037;
-    public static final int title_shoppingcart=0x7f0d0038;
-    public static final int visitor_login_prompt=0x7f0d0039;
+    public static final int duplicate_username_found=0x7f0d0025;
+    public static final int email=0x7f0d0026;
+    public static final int email_validation_failed=0x7f0d0027;
+    public static final int login_validation_failed=0x7f0d0028;
+    public static final int name=0x7f0d0029;
+    public static final int password=0x7f0d002a;
+    public static final int password_toggle_content_description=0x7f0d002b;
+    public static final int path_password_eye=0x7f0d002c;
+    public static final int path_password_eye_mask_strike_through=0x7f0d002d;
+    public static final int path_password_eye_mask_visible=0x7f0d002e;
+    public static final int path_password_strike_through=0x7f0d002f;
+    public static final int search_menu_title=0x7f0d0030;
+    public static final int status_bar_notification_info_overflow=0x7f0d0031;
+    public static final int title_account=0x7f0d0032;
+    public static final int title_activity_main_page=0x7f0d0033;
+    public static final int title_bookshelf=0x7f0d0034;
+    public static final int title_dashboard=0x7f0d0035;
+    public static final int title_discover=0x7f0d0036;
+    public static final int title_home=0x7f0d0037;
+    public static final int title_library=0x7f0d0038;
+    public static final int title_notifications=0x7f0d0039;
+    public static final int title_shoppingcart=0x7f0d003a;
+    public static final int visitor_login_prompt=0x7f0d003b;
   }
   public static final class style {
     public static final int AlertDialog_AppCompat=0x7f0e0000;
@@ -8574,7 +8576,7 @@ public final class R {
      * <tr><td>barrier</td><td>2</td><td></td></tr>
      * <tr><td>chains</td><td>4</td><td></td></tr>
      * <tr><td>dimensions</td><td>8</td><td></td></tr>
-     * <tr><td>direct</td><td>1</td><td></td></tr>
+     * <tr><td>direct</td><td>1</td><td>for now only direct & barriers</td></tr>
      * <tr><td>none</td><td>0</td><td></td></tr>
      * <tr><td>standard</td><td>3</td><td></td></tr>
      * </table>
