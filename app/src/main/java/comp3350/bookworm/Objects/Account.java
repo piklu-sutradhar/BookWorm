@@ -5,9 +5,9 @@ public class Account {
     private String password;
     private String email;
 
-    // Default constructor
-    public Account() {
-    }
+//    // Default constructor
+//    public Account() {
+//    }
 
     public Account(String u, String p, String e) {
         userName = u;
