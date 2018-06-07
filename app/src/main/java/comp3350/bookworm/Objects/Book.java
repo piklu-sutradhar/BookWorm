@@ -1,11 +1,6 @@
 package comp3350.bookworm.Objects;
 
 public class Book {
-    // Hold the info of each book
-    String Author;
-    String Title;
-    String publishYear;
-
     private final String bookName;
     private final String authorName;
     private final String bookPreview;
@@ -22,9 +17,7 @@ public class Book {
         return bookName;
     }
 
-    public String getAuthorName() {
-        return authorName;
-    }
+    public String getAuthorName() { return authorName; }
 
     public String getPreview() {
         return bookPreview;

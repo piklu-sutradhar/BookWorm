@@ -1,14 +1,17 @@
 package comp3350.bookworm.Presentation;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import comp3350.bookworm.R;
 
 public class DescriptionActivity extends AppCompatActivity {
+    public static final String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,12 +40,21 @@ public class DescriptionActivity extends AppCompatActivity {
         });
 
         final TextView textView_title = (TextView) findViewById( R.id.textView_title );
-        textView_title.setText( R.string.bookTitle );
+//        textView_title.setText();
 
         final TextView textView_price = (TextView) findViewById( R.id.textView_price );
-        textView_price.setText( R.string.bookPrice );
+//        textView_price.setText();
 
-        final TextView textView_review = (TextView) findViewById( R.id.textView_review );
-        textView_review.setText( R.string.review );
+        final TextView textView_review = (TextView) findViewById( R.id.textView_reviewPoint );
+        textView_review.setText( R.string.title_review );
+    }
+
+    /* test */
+    public void sendMessage( View v ) {
+        Intent intent = new Intent(this, DisplayMessageActivity.class);
+        EditText editText = (EditText) findViewById(R.id.editText);
+        String message = editText.getText().toString();
+        intent.putExtra(EXTRA_MESSAGE, message);
+        startActivity(intent);
     }
 }
