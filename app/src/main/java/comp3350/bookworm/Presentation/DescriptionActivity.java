@@ -8,10 +8,15 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
+import comp3350.bookworm.BusinessLogic.BookManager;
+import comp3350.bookworm.Objects.Book;
 import comp3350.bookworm.R;
 
 public class DescriptionActivity extends AppCompatActivity {
-    public static final String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
+    private BookManager bookManeger;
+    private ArrayList<Book> bookList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,14 +26,15 @@ public class DescriptionActivity extends AppCompatActivity {
         final Button buttonBuy = (Button) findViewById( R.id.buttonBuy );
         buttonBuy.setOnClickListener( new View.OnClickListener() {
             public void onClick( View v ) {
-
+                //TODO: print message like "order completed"
             }
         });
 
         final Button buttonPreview = (Button) findViewById( R.id.buttonPreview );
         buttonPreview.setOnClickListener( new View.OnClickListener() {
             public void onClick( View v ) {
-
+                startActivity( new Intent(DescriptionActivity.this, BookPreviewActivity.class) );
+                finish();
             }
         });
 
