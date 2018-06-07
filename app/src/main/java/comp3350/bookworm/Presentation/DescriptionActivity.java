@@ -11,7 +11,6 @@ import android.widget.TextView;
 import comp3350.bookworm.R;
 
 public class DescriptionActivity extends AppCompatActivity {
-    public static final String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
