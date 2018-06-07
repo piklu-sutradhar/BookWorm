@@ -48,13 +48,4 @@ public class DescriptionActivity extends AppCompatActivity {
         final TextView textView_review = (TextView) findViewById( R.id.textView_reviewPoint );
         textView_review.setText( R.string.title_review );
     }
-
-    /* test */
-    public void sendMessage( View v ) {
-        Intent intent = new Intent(this, DisplayMessageActivity.class);
-        EditText editText = (EditText) findViewById(R.id.editText);
-        String message = editText.getText().toString();
-        intent.putExtra(EXTRA_MESSAGE, message);
-        startActivity(intent);
-    }
 }
