@@ -20,7 +20,11 @@
         <activity android:name=".Presentation.SignupActivity" />
         <activity android:name=".Presentation.AccountActivity" />
         <activity android:name=".Presentation.DescriptionActivity" />
+<<<<<<< HEAD
+        <activity android:name=".Presentation.BookPreviewActivity"></activity>
+=======
         <activity android:name=".Presentation.OrderHistoryActivity" />
+>>>>>>> 168549f2dfb7f42603bd31cb9f8eafa87c815eb7
     </application>
 
 </manifest>
