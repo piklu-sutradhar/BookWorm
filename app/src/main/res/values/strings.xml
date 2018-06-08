@@ -20,4 +20,12 @@
     <string name="email_validation_failed">Invalid E-mail address!</string>
     <string name="title_review">Reviews</string>
     <string name="InvalidUsername">User does not exist...</string>
+    <string name="title_best_seller">Best-seller</string>
+    <string name="title_best_for_you">Best For You</string>
+    <string name="best_seller">Best-seller</string>
+    <string name="best_choice">Best choice</string>
+    <string-array name="option_array">
+        <item>Best-seller</item>
+        <item>Best choice</item>
+    </string-array>
 </resources>

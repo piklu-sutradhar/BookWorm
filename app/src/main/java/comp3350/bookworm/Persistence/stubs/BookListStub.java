@@ -28,6 +28,7 @@ public class BookListStub implements BookListPersistence {
         this.bookList = bookList;
     }
 
+    // TODO: this doesn't work!!!!!!!!!!!
     @Override
     public Book searchBook(String bookName) {
         Book bookToreturn = null;
@@ -38,6 +39,15 @@ public class BookListStub implements BookListPersistence {
             }
         }
         return bookToreturn;
+    }
+
+    // TODO: this works!!!
+    public Book getBook(String bookName) {
+        for(Book book : bookList) {
+            if(book.getBookName().equals(bookName))
+                return book;
+        }
+        return null;
     }
 
     public ArrayList<Book> getBookList() {

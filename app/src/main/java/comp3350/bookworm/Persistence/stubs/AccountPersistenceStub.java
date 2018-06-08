@@ -1,9 +1,8 @@
 package comp3350.bookworm.Persistence.stubs;
 
 import java.util.ArrayList;
-import java.util.List;
 
-import comp3350.bookworm.BusinessLogic.DuplicateUsernameException;
+import comp3350.bookworm.Objects.DuplicateUsernameException;
 import comp3350.bookworm.Objects.Account;
 import comp3350.bookworm.Persistence.AccountPersistence;
 
