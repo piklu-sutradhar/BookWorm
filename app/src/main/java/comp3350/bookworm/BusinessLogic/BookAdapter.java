@@ -1,20 +1,21 @@
 package comp3350.bookworm.BusinessLogic;
 
-import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.SearchView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 
 import comp3350.bookworm.Objects.Book;
+import comp3350.bookworm.Presentation.HomePage;
 import comp3350.bookworm.R;
 
 public class BookAdapter extends ArrayAdapter<Book> {
 
-    public BookAdapter(Context context, ArrayList<Book> users) {
+    public BookAdapter(HomePage context, ArrayList<Book> users) {
         super(context, 0, users);
     }
 

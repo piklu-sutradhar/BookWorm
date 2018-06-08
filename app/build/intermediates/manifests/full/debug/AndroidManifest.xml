@@ -24,10 +24,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="comp3350.bookworm.Presentation.LoginActivity" >
-        </activity>
+        <activity android:name="comp3350.bookworm.Presentation.LoginActivity" />
         <activity android:name="comp3350.bookworm.Presentation.SignupActivity" />
         <activity android:name="comp3350.bookworm.Presentation.AccountActivity" />
+        <activity android:name="comp3350.bookworm.Presentation.DescriptionActivity" />
 
         <meta-data
             android:name="android.support.VERSION"

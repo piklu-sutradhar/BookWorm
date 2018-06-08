@@ -7,6 +7,8 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.SearchView;
 import android.widget.TextView;
@@ -51,6 +53,7 @@ public class HomePage extends AppCompatActivity {
         setContentView(R.layout.activity_home_page);
 
 //        mTextMessage = (TextView) findViewById(R.id.home_page_message);
+        //ListViewAdapter viewAdapter;
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.home_page_navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
@@ -61,7 +64,24 @@ public class HomePage extends AppCompatActivity {
                 searchView.clearFocus();
             }
         }, 300);
+        //searchView.setOnQueryTextListener((SearchView.OnQueryTextListener) this);
+        // perform set on query text listener event
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                //ArrayList<Book> similarBooks = (ArrayList<Book>) Service.getBookListStub().getSimilarBooks(query);
+                //BookAdapter bookAdapter = new BookAdapter(this, similarBooks);
+                return false;
+            }
 
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                ArrayList<Book> similarBooks = (ArrayList<Book>) Service.getBookListStub().getSimilarBooks(newText);
+                ListView similarBookList = (ListView) findViewById(R.id.bookList);
+                //BookAdapter similarBookAdapter = new BookAdapter(comp3350.bookworm.Presentation.HomePage, similarBooks);
+                return false;
+            }
+        });
         // Construct the data source
         ArrayList<Book> books = Service.getBookListStub().getBookList();
         // Create the adapter to convert the array to views

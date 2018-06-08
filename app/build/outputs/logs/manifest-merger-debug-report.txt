@@ -89,17 +89,21 @@ ADDED from C:\Users\sutra\Desktop\piklu's_data\Current Courses\Comp3350\Project\
 	android:name
 		ADDED from C:\Users\sutra\Desktop\piklu's_data\Current Courses\Comp3350\Project\codeX\app\src\main\AndroidManifest.xml:16:27-74
 activity#comp3350.bookworm.Presentation.LoginActivity
-ADDED from C:\Users\sutra\Desktop\piklu's_data\Current Courses\Comp3350\Project\codeX\app\src\main\AndroidManifest.xml:19:9-20:20
+ADDED from C:\Users\sutra\Desktop\piklu's_data\Current Courses\Comp3350\Project\codeX\app\src\main\AndroidManifest.xml:19:9-73
 	android:name
 		ADDED from C:\Users\sutra\Desktop\piklu's_data\Current Courses\Comp3350\Project\codeX\app\src\main\AndroidManifest.xml:19:19-61
 activity#comp3350.bookworm.Presentation.SignupActivity
-ADDED from C:\Users\sutra\Desktop\piklu's_data\Current Courses\Comp3350\Project\codeX\app\src\main\AndroidManifest.xml:21:9-65
+ADDED from C:\Users\sutra\Desktop\piklu's_data\Current Courses\Comp3350\Project\codeX\app\src\main\AndroidManifest.xml:20:9-65
 	android:name
-		ADDED from C:\Users\sutra\Desktop\piklu's_data\Current Courses\Comp3350\Project\codeX\app\src\main\AndroidManifest.xml:21:19-62
+		ADDED from C:\Users\sutra\Desktop\piklu's_data\Current Courses\Comp3350\Project\codeX\app\src\main\AndroidManifest.xml:20:19-62
 activity#comp3350.bookworm.Presentation.AccountActivity
-ADDED from C:\Users\sutra\Desktop\piklu's_data\Current Courses\Comp3350\Project\codeX\app\src\main\AndroidManifest.xml:22:9-75
+ADDED from C:\Users\sutra\Desktop\piklu's_data\Current Courses\Comp3350\Project\codeX\app\src\main\AndroidManifest.xml:21:9-66
 	android:name
-		ADDED from C:\Users\sutra\Desktop\piklu's_data\Current Courses\Comp3350\Project\codeX\app\src\main\AndroidManifest.xml:22:19-63
+		ADDED from C:\Users\sutra\Desktop\piklu's_data\Current Courses\Comp3350\Project\codeX\app\src\main\AndroidManifest.xml:21:19-63
+activity#comp3350.bookworm.Presentation.DescriptionActivity
+ADDED from C:\Users\sutra\Desktop\piklu's_data\Current Courses\Comp3350\Project\codeX\app\src\main\AndroidManifest.xml:22:9-79
+	android:name
+		ADDED from C:\Users\sutra\Desktop\piklu's_data\Current Courses\Comp3350\Project\codeX\app\src\main\AndroidManifest.xml:22:19-67
 uses-sdk
 INJECTED from C:\Users\sutra\Desktop\piklu's_data\Current Courses\Comp3350\Project\codeX\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\sutra\Desktop\piklu's_data\Current Courses\Comp3350\Project\codeX\app\src\main\AndroidManifest.xml

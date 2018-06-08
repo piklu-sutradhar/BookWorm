@@ -13,10 +13,10 @@ public class BookListStub implements BookListPersistence {
     {
         this.bookList = new ArrayList<Book>();
 
-        bookList.add(new Book("C++", "Daniel J. Fung", "Programming book", 5.0));
-        bookList.add(new Book("Java", "Daniel J. Fung", "Programming book", 5.0));
-        bookList.add(new Book("Rubi on Reils", "Daniel J. Fung", "Programming book", 5.0));
-        bookList.add(new Book("C#", "Daniel J. Fung", "Programming book", 5.0));
+        bookList.add(new Book("C++", "Daniel J. Fung", "Programming book", "Programming", 5.0));
+        bookList.add(new Book("Java", "Daniel J. Fung", "Programming book", "Programming",5.0));
+        bookList.add(new Book("Rubi on Reils", "Daniel J. Fung", "Programming book", "Programming", 5.0));
+        bookList.add(new Book("C#", "Daniel J. Fung", "Programming book","Programming", 5.0));
     }
 
     @Override
@@ -55,5 +55,26 @@ public class BookListStub implements BookListPersistence {
                 deleted = true;
             }
         }
+    }
+    public List<Book> getSimilarBooks(String text)
+    {
+        List<Book> returnList = new ArrayList<Book>();
+
+        for (Book current:bookList
+             ) {
+            int letterMatched = 0;
+            for (int i = 0; i < text.length(); i++)
+            {
+                if(current.getBookName().contains(text.substring(i,1)))
+                {
+                  letterMatched++;
+                }
+            }
+            if(letterMatched == text.length())
+            {
+                returnList.add(current);
+            }
+        }
+        return returnList;
     }
 }

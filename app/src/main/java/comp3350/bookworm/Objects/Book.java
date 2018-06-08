@@ -4,12 +4,14 @@ public class Book {
     private final String bookName;
     private final String authorName;
     private final String bookPreview;
+    private final String category;
     private final double bookPrice;
 
-    public Book( String bookName, String authorName, String bookPreview, double bookPrice ) {
+    public Book( String bookName, String authorName, String bookPreview, String category, double bookPrice ) {
         this.bookName = bookName;
         this.authorName = authorName;
         this.bookPreview = bookPreview;
+        this.category = category;
         this.bookPrice = bookPrice;
     }
 
@@ -25,6 +27,10 @@ public class Book {
 
     public double getBookPrice() {
         return bookPrice;
+    }
+
+    public String getCategory() {
+        return category;
     }
 
     public String toString() {

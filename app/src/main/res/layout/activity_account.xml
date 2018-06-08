@@ -41,30 +41,32 @@
         android:id="@+id/account_logined"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical" >
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
         <TextView
             android:id="@+id/account_uername"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="16dp"
             android:text="User Name placeholer"
-            android:textAppearance="?android:textAppearanceLarge"
-            android:layout_margin="16dp" />
+            android:textAppearance="?android:textAppearanceLarge" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="start"
             android:layout_margin="16dp"
             android:text="Purchase History"
-            android:textAlignment="textStart"
-            android:layout_gravity="start"/>
+            android:textAlignment="textStart" />
 
         <Button
             android:id="@+id/btn_account_logout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="logout"
-            android:layout_margin="16dp"/>
+            android:layout_margin="16dp"
+            android:text="logout" />
 
     </LinearLayout>
 

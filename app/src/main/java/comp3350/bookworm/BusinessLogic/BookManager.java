@@ -36,5 +36,7 @@ public class BookManager {
     {
        return bookListStub.getBookList();
     }
-
+    public List<Book> searchSimilarBooks (String text){
+        return bookListStub.getSimilarBooks(text);
+    }
 }

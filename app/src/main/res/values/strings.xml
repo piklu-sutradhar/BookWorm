@@ -18,11 +18,8 @@
     <string name="already_a_member_login">Already a member? Login</string>
     <string name="duplicate_username_found">Username already exists</string>
     <string name="email_validation_failed">Invalid E-mail address!</string>
-<<<<<<< HEAD
     <string name="username">Username</string>
     <string name="login">Login</string>
     <string name="no_account_yet_create_one">No account yet? Create one</string>
-=======
     <string name="title_review">Reviews</string>
->>>>>>> 88f079b322d3eb2c71a0f6af7d7ece2fd0391e56
 </resources>
