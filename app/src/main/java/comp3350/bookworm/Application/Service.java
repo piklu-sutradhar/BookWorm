@@ -1,16 +1,10 @@
 package comp3350.bookworm.Application;
 
 import comp3350.bookworm.Persistence.stubs.AccountPersistenceStub;
-<<<<<<< HEAD
-//<<<<<<< HEAD
-import comp3350.bookworm.Persistence.stubs.BookListStub;
-//=======
-import comp3350.bookworm.Persistence.stubs.LoginUserPersistenceStub;
-//>>>>>>> 35da3234a63396c3ef890150ad84f2d89fc1cbba
-=======
 import comp3350.bookworm.Persistence.stubs.BookListStub;
 import comp3350.bookworm.Persistence.stubs.LoginUserPersistenceStub;
->>>>>>> cafea6f8a9642e83a419431534e445cf0b3b7ba4
+import comp3350.bookworm.Persistence.stubs.BookListStub;
+import comp3350.bookworm.Persistence.stubs.LoginUserPersistenceStub;
 
 public class Service {
     private static AccountPersistenceStub accountPersistenceStub = null;

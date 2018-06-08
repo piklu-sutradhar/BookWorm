@@ -6,7 +6,7 @@
     density="xxhdpi"
     format="10"
     plugin-version="3.1.2"
-    timestamp="1528243835681"
+    timestamp="1528387399947"
     token="-7251952336326073423"
     verifier="FULL_BUILD_REQUESTED" >
 
@@ -18,25 +18,16 @@
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="1582" />
     <task
         name="verifier"
-        duration="0" />
+        duration="1384" />
 
     <artifact
+        location="C:\Users\sutra\Desktop\piklu&apos;s_data\Current Courses\Comp3350\Project\codeX\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
+        type="SPLIT" />
+    <artifact
         location="C:\Users\sutra\Desktop\piklu&apos;s_data\Current Courses\Comp3350\Project\codeX\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\sutra\Desktop\piklu&apos;s_data\Current Courses\Comp3350\Project\codeX\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\sutra\Desktop\piklu&apos;s_data\Current Courses\Comp3350\Project\codeX\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\sutra\Desktop\piklu&apos;s_data\Current Courses\Comp3350\Project\codeX\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\sutra\Desktop\piklu&apos;s_data\Current Courses\Comp3350\Project\codeX\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
         type="SPLIT" />
     <artifact
         location="C:\Users\sutra\Desktop\piklu&apos;s_data\Current Courses\Comp3350\Project\codeX\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
@@ -48,13 +39,22 @@
         location="C:\Users\sutra\Desktop\piklu&apos;s_data\Current Courses\Comp3350\Project\codeX\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
         type="SPLIT" />
     <artifact
-        location="C:\Users\sutra\Desktop\piklu&apos;s_data\Current Courses\Comp3350\Project\codeX\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
+        location="C:\Users\sutra\Desktop\piklu&apos;s_data\Current Courses\Comp3350\Project\codeX\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
         type="SPLIT" />
     <artifact
         location="C:\Users\sutra\Desktop\piklu&apos;s_data\Current Courses\Comp3350\Project\codeX\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
         type="SPLIT" />
     <artifact
         location="C:\Users\sutra\Desktop\piklu&apos;s_data\Current Courses\Comp3350\Project\codeX\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\sutra\Desktop\piklu&apos;s_data\Current Courses\Comp3350\Project\codeX\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\sutra\Desktop\piklu&apos;s_data\Current Courses\Comp3350\Project\codeX\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\sutra\Desktop\piklu&apos;s_data\Current Courses\Comp3350\Project\codeX\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
         type="SPLIT" />
     <artifact
         location="C:\Users\sutra\Desktop\piklu&apos;s_data\Current Courses\Comp3350\Project\codeX\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
@@ -65,22 +65,13 @@
 
     <build
         build-mode="FULL"
-        timestamp="1528243835681"
+        timestamp="1528387399947"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
+            location="C:\Users\sutra\Desktop\piklu&apos;s_data\Current Courses\Comp3350\Project\codeX\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
+            type="SPLIT" />
+        <artifact
             location="C:\Users\sutra\Desktop\piklu&apos;s_data\Current Courses\Comp3350\Project\codeX\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\sutra\Desktop\piklu&apos;s_data\Current Courses\Comp3350\Project\codeX\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\sutra\Desktop\piklu&apos;s_data\Current Courses\Comp3350\Project\codeX\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\sutra\Desktop\piklu&apos;s_data\Current Courses\Comp3350\Project\codeX\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\sutra\Desktop\piklu&apos;s_data\Current Courses\Comp3350\Project\codeX\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\sutra\Desktop\piklu&apos;s_data\Current Courses\Comp3350\Project\codeX\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
@@ -92,13 +83,22 @@
             location="C:\Users\sutra\Desktop\piklu&apos;s_data\Current Courses\Comp3350\Project\codeX\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\sutra\Desktop\piklu&apos;s_data\Current Courses\Comp3350\Project\codeX\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
+            location="C:\Users\sutra\Desktop\piklu&apos;s_data\Current Courses\Comp3350\Project\codeX\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\sutra\Desktop\piklu&apos;s_data\Current Courses\Comp3350\Project\codeX\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\sutra\Desktop\piklu&apos;s_data\Current Courses\Comp3350\Project\codeX\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\sutra\Desktop\piklu&apos;s_data\Current Courses\Comp3350\Project\codeX\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\sutra\Desktop\piklu&apos;s_data\Current Courses\Comp3350\Project\codeX\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\sutra\Desktop\piklu&apos;s_data\Current Courses\Comp3350\Project\codeX\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\sutra\Desktop\piklu&apos;s_data\Current Courses\Comp3350\Project\codeX\app\build\intermediates\split-apk\debug\slices\slice_9.apk"

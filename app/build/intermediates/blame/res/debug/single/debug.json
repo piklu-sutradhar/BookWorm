@@ -216,6 +216,10 @@
         "source": "C:\\Users\\sutra\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.4.0.aar\\0068f906e42a9b4cb4a1171ed73d008b\\res\\drawable-hdpi-v4\\design_ic_visibility.png"
     },
     {
+        "merged": "C:\\Users\\sutra\\Desktop\\piklu's_data\\Current Courses\\Comp3350\\Project\\codeX\\app\\build\\intermediates\\res\\merged\\debug\\xml_searchable.xml.flat",
+        "source": "C:\\Users\\sutra\\Desktop\\piklu's_data\\Current Courses\\Comp3350\\Project\\codeX\\app\\src\\main\\res\\xml\\searchable.xml"
+    },
+    {
         "merged": "C:\\Users\\sutra\\Desktop\\piklu's_data\\Current Courses\\Comp3350\\Project\\codeX\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "C:\\Users\\sutra\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.4.0.aar\\02fc8f678d6b9c17dab67f2f462cdf6c\\res\\drawable-mdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
