@@ -14,5 +14,6 @@ public class BookPreviewActivity extends AppCompatActivity {
         setContentView(R.layout.activity_book_preview);
 
         final TextView textView_previewContent = (TextView) findViewById( R.id.textView_previewContent );
+        textView_previewContent.setText( getIntent().getStringExtra( "PREVIEW_CONTENT") );
     }
 }

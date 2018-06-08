@@ -8,8 +8,8 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="329dp"
-        android:layout_height="425dp"
+        android:layout_width="306dp"
+        android:layout_height="402dp"
         android:src="@android:color/holo_blue_light"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="16dp" />
@@ -32,27 +32,11 @@
 
     <TextView
         android:id="@+id/textView_title"
-        android:layout_width="221dp"
+        android:layout_width="241dp"
         android:layout_height="63dp"
         android:text="Book Title"
-        tools:layout_editor_absoluteX="364dp"
-        tools:layout_editor_absoluteY="16dp" />
-
-    <TextView
-        android:id="@+id/textView_price"
-        android:layout_width="105dp"
-        android:layout_height="24dp"
-        android:text="Price"
-        tools:layout_editor_absoluteX="424dp"
-        tools:layout_editor_absoluteY="146dp" />
-
-    <TextView
-        android:id="@+id/textView_reviewScore"
-        android:layout_width="221dp"
-        android:layout_height="55dp"
-        android:text="Review Point"
-        tools:layout_editor_absoluteX="365dp"
-        tools:layout_editor_absoluteY="208dp" />
+        tools:layout_editor_absoluteX="345dp"
+        tools:layout_editor_absoluteY="107dp" />
 
     <EditText
         android:id="@+id/editText"
@@ -77,7 +61,22 @@
         android:layout_width="105dp"
         android:layout_height="30dp"
         android:text="author name"
-        tools:layout_editor_absoluteX="425dp"
-        tools:layout_editor_absoluteY="94dp" />
+        tools:layout_editor_absoluteX="407dp"
+        tools:layout_editor_absoluteY="190dp" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="345dp"
+        tools:layout_editor_absoluteY="360dp" />
+
+    <TextView
+        android:id="@+id/textView_price"
+        android:layout_width="133dp"
+        android:layout_height="60dp"
+        android:text="Book Price"
+        tools:layout_editor_absoluteX="392dp"
+        tools:layout_editor_absoluteY="235dp" />
 
 </android.support.constraint.ConstraintLayout>
