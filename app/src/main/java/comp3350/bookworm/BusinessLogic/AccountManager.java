@@ -4,6 +4,8 @@ import android.text.TextUtils;
 
 import comp3350.bookworm.Application.Service;
 import comp3350.bookworm.Objects.Account;
+import comp3350.bookworm.Objects.Book;
+import comp3350.bookworm.Persistence.stubs.OrderHistoryPersistenceStub;
 
 public class AccountManager {
 
@@ -46,7 +48,6 @@ public class AccountManager {
     public void logout() {
         Service.getLoginUserPersistenceStub().logout();
     }
-
 
 
 }

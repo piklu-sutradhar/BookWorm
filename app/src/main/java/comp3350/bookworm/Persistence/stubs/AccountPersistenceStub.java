@@ -8,7 +8,7 @@ import comp3350.bookworm.Objects.Account;
 import comp3350.bookworm.Persistence.AccountPersistence;
 
 public class AccountPersistenceStub implements AccountPersistence {
-    private List<Account> accounts;
+    private ArrayList<Account> accounts;
 
 
     public AccountPersistenceStub() {
@@ -66,6 +66,11 @@ public class AccountPersistenceStub implements AccountPersistence {
         {
             accounts.remove(index);
         }
+    }
+
+    @Override
+    public ArrayList<Account> getAllAccounts() {
+        return accounts;
     }
 }
 
