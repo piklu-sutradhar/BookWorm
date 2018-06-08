@@ -22,4 +22,5 @@
     <string name="login">Login</string>
     <string name="no_account_yet_create_one">No account yet? Create one</string>
     <string name="title_review">Reviews</string>
+    <string name="InvalidUsername">User does not exist...</string>
 </resources>

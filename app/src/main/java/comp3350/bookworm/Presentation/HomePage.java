@@ -11,20 +11,15 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.SearchView;
-import android.widget.TextView;
 
 import java.util.ArrayList;
 
 import comp3350.bookworm.Application.Service;
-import comp3350.bookworm.BusinessLogic.AccountManager;
 import comp3350.bookworm.BusinessLogic.BookAdapter;
-import comp3350.bookworm.Objects.Account;
 import comp3350.bookworm.Objects.Book;
 import comp3350.bookworm.R;
 
 public class HomePage extends AppCompatActivity {
-
-//    private TextView mTextMessage;
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -33,13 +28,10 @@ public class HomePage extends AppCompatActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
                 case R.id.navigation_library:
-//                    mTextMessage.setText(R.string.title_bookshelf);
                     return true;
                 case R.id.navigation_discover:
-//                    mTextMessage.setText(R.string.title_account);
                     return true;
                 case R.id.navigation_account:
-//                    mTextMessage.setText(R.string.title_shoppingcart);
                     startActivity(new Intent(HomePage.this, AccountActivity.class));
                     return true;
             }
@@ -52,8 +44,11 @@ public class HomePage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
 
+<<<<<<< HEAD
 //        mTextMessage = (TextView) findViewById(R.id.home_page_message);
         //ListViewAdapter viewAdapter;
+=======
+>>>>>>> 168549f2dfb7f42603bd31cb9f8eafa87c815eb7
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.home_page_navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
@@ -87,7 +82,7 @@ public class HomePage extends AppCompatActivity {
         // Create the adapter to convert the array to views
         BookAdapter bookAdapter = new BookAdapter(this, books);
         // Attach the adapter to a ListView
-        ListView listView = (ListView) findViewById(R.id.bookList);
+        ListView listView = (ListView) findViewById(R.id.bookList_homepage);
         listView.setAdapter(bookAdapter);
 
     }

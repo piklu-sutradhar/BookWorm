@@ -1,5 +1,6 @@
 package comp3350.bookworm.Persistence;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import comp3350.bookworm.BusinessLogic.DuplicateUsernameException;
@@ -13,4 +14,6 @@ public interface AccountPersistence {
     Account updateAccount(Account currentAccount);
 
     void deleteAccount(Account currentAccount);
+
+    ArrayList<Account> getAllAccounts();
 }

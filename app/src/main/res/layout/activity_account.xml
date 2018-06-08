@@ -54,6 +54,7 @@
             android:textAppearance="?android:textAppearanceLarge" />
 
         <Button
+            android:id="@+id/btn_Purchase_History"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="start"
