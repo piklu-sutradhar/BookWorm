@@ -14,7 +14,6 @@ public class Book {
         this.bookPrice = bookPrice;
     }
 
-    //@@ overloading
     public Book( String bookName, String authorName, String bookPreview, double bookPrice, double bookRating ) {
         this.bookName = bookName;
         this.authorName = authorName;

@@ -25,10 +25,6 @@ public class DescriptionActivity extends AppCompatActivity {
     private AlertDialog dialog;
     private Book whichBook;
 
-    /* is it possible to get an object itself rather than String from previous activity?
-    *  which one would be better?
-    *  object will be better*/
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
