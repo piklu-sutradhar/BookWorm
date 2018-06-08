@@ -47,7 +47,7 @@
         tools:layout_editor_absoluteY="146dp" />
 
     <TextView
-        android:id="@+id/textView_reviewPoint"
+        android:id="@+id/textView_reviewScore"
         android:layout_width="221dp"
         android:layout_height="55dp"
         android:text="Review Point"

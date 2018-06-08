@@ -7,10 +7,10 @@
     tools:context=".Presentation.BookPreviewActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textView_previewContent"
         android:layout_width="574dp"
         android:layout_height="795dp"
-        android:text="TextView"
+        android:text="preview content"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="16dp" />
 </android.support.constraint.ConstraintLayout>

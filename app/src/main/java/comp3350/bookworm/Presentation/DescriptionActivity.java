@@ -1,6 +1,7 @@
 package comp3350.bookworm.Presentation;
 
 import android.content.Intent;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -17,6 +18,7 @@ import comp3350.bookworm.R;
 public class DescriptionActivity extends AppCompatActivity {
     private BookManager bookManeger;
     private ArrayList<Book> bookList;
+    private AlertDialog dialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +28,9 @@ public class DescriptionActivity extends AppCompatActivity {
         final Button buttonBuy = (Button) findViewById( R.id.buttonBuy );
         buttonBuy.setOnClickListener( new View.OnClickListener() {
             public void onClick( View v ) {
-                //TODO: print message like "order completed"
+                // TODO: print message like "order completed" by using alertdialog
+                // https://developer.android.com/guide/topics/ui/dialogs
+                dialog = new AlertDialog();
             }
         });
 
@@ -51,7 +55,7 @@ public class DescriptionActivity extends AppCompatActivity {
         final TextView textView_price = (TextView) findViewById( R.id.textView_price );
 //        textView_price.setText();
 
-        final TextView textView_review = (TextView) findViewById( R.id.textView_reviewPoint );
+        final TextView textView_review = (TextView) findViewById( R.id.textView_reviewScore );
         textView_review.setText( R.string.title_review );
     }
 }
