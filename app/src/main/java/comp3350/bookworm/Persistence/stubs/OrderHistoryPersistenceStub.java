@@ -11,36 +11,36 @@ import comp3350.bookworm.Persistence.OrderHistoryPersistence;
 
 
 public class OrderHistoryPersistenceStub implements OrderHistoryPersistence {
-    private ArrayList<Account> accounts = Service.getAccountPersistenceStub().getAllAccounts();
+    private ArrayList<Account> accounts;
     private ArrayList<ArrayList<Book>> accountOfBooks;
 
     public OrderHistoryPersistenceStub() {
-        accountOfBooks = new ArrayList<ArrayList<Book>>();
-        ArrayList<Book> bookList = new ArrayList<Book>();
+        accounts = Service.getAccountPersistenceStub().getAllAccounts();
+        accountOfBooks = new ArrayList<>();
+        ArrayList<Book> bookList = new ArrayList<>();
+
         bookList.add(new Book("C++", "Daniel J. Fung", "Programming book", 5.0));
         bookList.add(new Book("Java", "Daniel J. Fung", "Programming book", 5.0));
 
-        for(int i = 0; i <accounts.size(); i++ )
+        for(int i = 0; i < accounts.size(); i++ )
         {
             accountOfBooks.add(bookList);
         }
     }
 
     @Override
-    public ArrayList<Book> getOrderHistory(Account currentAccount) throws NullAccountException {
+    public ArrayList<Book> getOrderHistory(String username) throws NullAccountException {
         ArrayList<Book> booksOfAccount = null;
         for(int i = 0 ; i < accounts.size(); i++)
         {
             if(accounts.get(i) == null)
                 throw new NullAccountException();
 
-            if(accounts.get(i) != null)
+            if(accounts.get(i).getUserName().equals(username))
             {
-                if(accounts.get(i).getUserName().equals(currentAccount.getUserName()))
-                {
-                    booksOfAccount = accountOfBooks.get(i);
-                }
+                booksOfAccount = accountOfBooks.get(i);
             }
+
         }
         return booksOfAccount;
     }

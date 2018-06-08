@@ -19,4 +19,5 @@
     <string name="duplicate_username_found">Username already exists</string>
     <string name="email_validation_failed">Invalid E-mail address!</string>
     <string name="title_review">Reviews</string>
+    <string name="InvalidUsername">User does not exist...</string>
 </resources>

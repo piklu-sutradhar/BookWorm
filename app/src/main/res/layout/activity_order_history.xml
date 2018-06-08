@@ -8,14 +8,11 @@
     tools:context=".Presentation.OrderHistoryActivity"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="127dp"
-        android:layout_height="36dp"
-        android:text="My Orders"
-        android:textAllCaps="false"
-        android:textSize="20sp"
-        android:layout_gravity="center"
-        tools:layout_editor_absoluteX="140dp"
-        tools:layout_editor_absoluteY="0dp" />
+    <ListView
+        android:id="@+id/bookList_orderhistory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp">
+    </ListView>
+    
 </LinearLayout>

@@ -9,7 +9,10 @@ import comp3350.bookworm.Objects.Book;
 public interface OrderHistoryPersistence {
 
 
-    ArrayList<Book> getOrderHistory(Account currentAccount) throws NullAccountException;
+//    ArrayList<Book> getOrderHistory(Account currentAccount) throws NullAccountException;
+
+    ArrayList<Book> getOrderHistory(String username) throws NullAccountException;
+
     void addNewOrderedBooks(Account currentAccount, Book newBook);
 
 }

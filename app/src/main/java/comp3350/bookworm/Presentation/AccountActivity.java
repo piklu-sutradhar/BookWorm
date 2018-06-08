@@ -55,6 +55,7 @@ public class AccountActivity extends AppCompatActivity {
         final Button purchaseBtn = (Button) findViewById(R.id.btn_Purchase_History);
         purchaseBtn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v){
+
                startActivity(new Intent(AccountActivity.this, OrderHistoryActivity.class));
             }
         });
