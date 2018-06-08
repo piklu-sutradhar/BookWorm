@@ -1,16 +1,26 @@
 package comp3350.bookworm.Objects;
 
-public class Book {
+public class Book implements Comparable {
     private final String bookName;
     private final String authorName;
     private final String bookPreview;
     private final double bookPrice;
+    private int bookSoldNum;
 
     public Book( String bookName, String authorName, String bookPreview, double bookPrice ) {
         this.bookName = bookName;
         this.authorName = authorName;
         this.bookPreview = bookPreview;
         this.bookPrice = bookPrice;
+        this.bookSoldNum = 0;
+    }
+
+    public Book( String bookName, String authorName, String bookPreview, double bookPrice, int numSold) {
+        this.bookName = bookName;
+        this.authorName = authorName;
+        this.bookPreview = bookPreview;
+        this.bookPrice = bookPrice;
+        this.bookSoldNum = numSold;
     }
 
     public String getBookName() {
@@ -23,12 +33,22 @@ public class Book {
         return bookPreview;
     }
 
+    public int getBookSoldNum(){ return bookSoldNum;}
+
     public double getBookPrice() {
         return bookPrice;
     }
 
     public String toString() {
         return bookName + authorName + bookPreview + bookPrice;
+    }
+
+    public void incBookSold(int numSold){bookSoldNum += numSold;}
+
+    @Override
+    public int compareTo(Object compareNumSold) {
+        int compareCopiesSold=((Book)compareNumSold).getBookSoldNum();
+        return compareCopiesSold - this.bookSoldNum;
     }
 
 }

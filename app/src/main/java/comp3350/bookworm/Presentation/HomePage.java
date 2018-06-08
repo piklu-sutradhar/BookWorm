@@ -63,7 +63,7 @@ public class HomePage extends AppCompatActivity {
         }, 300);
 
         // Construct the data source
-        ArrayList<Book> books = Service.getBookListStub().getBookList();
+        ArrayList<Book> books = Service.getBookListStub().GetBestSellerList();
         // Create the adapter to convert the array to views
         BookAdapter bookAdapter = new BookAdapter(this, books);
         // Attach the adapter to a ListView
