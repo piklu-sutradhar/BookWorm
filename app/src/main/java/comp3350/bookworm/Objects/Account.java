@@ -1,9 +1,12 @@
 package comp3350.bookworm.Objects;
 
+import java.util.ArrayList;
+
 public class Account {
     private String userName;
     private String password;
     private String email;
+
 
 //    // Default constructor
 //    public Account() {
@@ -48,4 +51,6 @@ public class Account {
     public boolean equals(Account currentAccount) {
         return currentAccount.userName.equals(this.userName) && currentAccount.password.equals(this.password);
     }
+
+
 }
