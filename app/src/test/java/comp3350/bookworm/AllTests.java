@@ -9,11 +9,13 @@ import org.junit.runners.Suite;
 import comp3350.bookworm.Business.AccountManagerTest;
 import comp3350.bookworm.Objects.Account;
 import comp3350.bookworm.Objects.AccountTest;
+import comp3350.bookworm.Objects.BookTest;
 
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
         AccountTest.class,
-        AccountManagerTest.class
+        AccountManagerTest.class,
+        BookTest.class
 })
 
 public class AllTests
