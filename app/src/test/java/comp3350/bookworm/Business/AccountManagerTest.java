@@ -1,13 +1,11 @@
 package comp3350.bookworm.Business;
 
-import junit.framework.TestCase;
-
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
 import comp3350.bookworm.BusinessLogic.AccountManager;
-import comp3350.bookworm.BusinessLogic.InvalidCredentialException;
+import comp3350.bookworm.Objects.InvalidCredentialException;
 import comp3350.bookworm.Objects.Account;
 
 import static junit.framework.Assert.assertFalse;

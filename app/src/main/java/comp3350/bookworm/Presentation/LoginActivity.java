@@ -2,22 +2,17 @@ package comp3350.bookworm.Presentation;
 
 import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
-import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import comp3350.bookworm.Application.Service;
 import comp3350.bookworm.BusinessLogic.AccountManager;
-import comp3350.bookworm.BusinessLogic.InvalidCredentialException;
+import comp3350.bookworm.Objects.InvalidCredentialException;
 import comp3350.bookworm.Objects.Account;
-import comp3350.bookworm.Persistence.stubs.LoginUserPersistenceStub;
 import comp3350.bookworm.R;
 
 //

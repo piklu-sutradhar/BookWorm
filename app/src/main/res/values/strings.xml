@@ -21,6 +21,7 @@
     <string name="email_validation_failed">Invalid E-mail address!</string>
     <string name="title_review">Reviews</string>
     <string name="InvalidUsername">User does not exist...</string>
+<<<<<<< HEAD
     <string name="place_order">Confirm</string>
     <string name="cancel_order">Cancel</string>
     <string name="order_summary">Order Summary</string>
@@ -31,4 +32,17 @@
     <string name="gst">GST/HST</string>
     <string name="pst">PST/RST/QST</string>
     <string name="order_total">Order Total</string>
+=======
+
+    <string name="title_best_seller">Best-seller</string>
+    <string name="title_best_for_you">Best For You</string>
+    <string name="best_seller">Best-seller</string>
+    <string name="best_choice">Best choice</string>
+
+    <string name="msg_add_to_cart">successfully added into the shopping cart!</string>
+    <string name="btn_back_to_list">go back to book list</string>
+    <string name="btn_check_cart">check my shopping cart</string>
+    <string name="not_implemented_msg">Sorry, This feature is not implemented yet.</string>
+
+>>>>>>> develop
 </resources>
