@@ -72,14 +72,14 @@
 
             <TextView
                 android:id="@+id/textView19"
-                android:layout_width="50%"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/items_price" />
 
             <TextView
                 android:id="@+id/items_price"
-                android:layout_width="50%"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="TextView" />
@@ -92,14 +92,14 @@
 
             <TextView
                 android:id="@+id/textView22"
-                android:layout_width="50%"
+                android:layout_width="35dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/delivery_price" />
 
             <TextView
                 android:id="@+id/delivery_price"
-                android:layout_width="50%"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="TextView" />
@@ -112,14 +112,14 @@
 
             <TextView
                 android:id="@+id/textView25"
-                android:layout_width="50%"
+                android:layout_width="35dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/total_b4_tax" />
 
             <TextView
                 android:id="@+id/totalb4tax_price"
-                android:layout_width="50%"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="TextView" />
@@ -132,14 +132,14 @@
 
             <TextView
                 android:id="@+id/textView26"
-                android:layout_width="50%"
+                android:layout_width="35dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/gst" />
 
             <TextView
                 android:id="@+id/gst_price"
-                android:layout_width="50%"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="TextView" />
@@ -152,14 +152,14 @@
 
             <TextView
                 android:id="@+id/textView28"
-                android:layout_width="50%"
+                android:layout_width="35dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/pst" />
 
             <TextView
                 android:id="@+id/pst_price"
-                android:layout_width="50%"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="TextView" />
@@ -172,7 +172,7 @@
 
             <TextView
                 android:id="@+id/textView30"
-                android:layout_width="50%"
+                android:layout_width="70dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/order_total"
@@ -180,7 +180,7 @@
 
             <TextView
                 android:id="@+id/ordertotal_price"
-                android:layout_width="50%"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="TextView"
