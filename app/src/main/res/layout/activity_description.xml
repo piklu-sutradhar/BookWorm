@@ -38,6 +38,11 @@
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
                 android:text="author name"/>
 
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
             <TextView
                 android:id="@+id/textView_price"
                 android:layout_width="105dp"
@@ -96,7 +101,6 @@
         <!--android:text="Submit"-->
         <!--tools:layout_editor_absoluteX="497dp"-->
         <!--tools:layout_editor_absoluteY="746dp" />-->
-
 
 
 </LinearLayout>
