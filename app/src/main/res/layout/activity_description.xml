@@ -14,42 +14,46 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="224dp"
-            android:layout_height="239dp"
+            android:layout_width="wrap_content"
+            android:layout_height="136dp"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
+            android:scaleType="centerCrop"
             android:src="@drawable/default_book_icon" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
             <TextView
                 android:id="@+id/textView_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
-                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-                android:text="Book Title" />
+                android:text="Book Title"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
 
             <TextView
                 android:id="@+id/textView_authorName"
                 android:layout_width="105dp"
                 android:layout_height="30dp"
                 android:layout_margin="20dp"
-                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-                android:text="author name"/>
+                android:text="author name"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
 
             <RatingBar
                 android:id="@+id/ratingBar"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="41dp" />
 
             <TextView
                 android:id="@+id/textView_price"
                 android:layout_width="105dp"
                 android:layout_height="24dp"
                 android:layout_margin="20dp"
-                android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                android:text="Price"/>
+                android:text="Price"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
         </LinearLayout>
 
     </LinearLayout>
