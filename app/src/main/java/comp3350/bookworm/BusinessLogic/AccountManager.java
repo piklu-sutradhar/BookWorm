@@ -4,8 +4,9 @@ import android.text.TextUtils;
 
 import comp3350.bookworm.Application.Service;
 import comp3350.bookworm.Objects.Account;
-import comp3350.bookworm.Objects.Book;
-import comp3350.bookworm.Persistence.stubs.OrderHistoryPersistenceStub;
+import comp3350.bookworm.Objects.DuplicateUsernameException;
+import comp3350.bookworm.Objects.InvalidCredentialException;
+import comp3350.bookworm.Objects.InvalidEmailAddressException;
 
 public class AccountManager {
 

@@ -8,29 +8,11 @@
     tools:context=".Presentation.HomePage"
     android:orientation="vertical">
 
-    <!--<TextView-->
-        <!--android:id="@+id/home_page_message"-->
-        <!--android:layout_width="146dp"-->
-        <!--android:layout_height="68dp"-->
-        <!--android:layout_marginLeft="@dimen/activity_horizontal_margin"-->
-        <!--android:layout_marginTop="@dimen/activity_vertical_margin"-->
-        <!--android:text="@string/title_home"-->
-        <!--android:textSize="50sp"-->
-        <!--app:layout_constraintBottom_toBottomOf="parent"-->
-        <!--app:layout_constraintHorizontal_bias="0.513"-->
-        <!--app:layout_constraintLeft_toLeftOf="parent"-->
-        <!--app:layout_constraintRight_toRightOf="parent"-->
-        <!--app:layout_constraintTop_toTopOf="parent"-->
-        <!--app:layout_constraintVertical_bias="0.423"-->
-        <!--android:layout_marginStart="@dimen/activity_horizontal_margin" />-->
-
-
-
     <SearchView
         android:id="@+id/Search_bar"
         android:layout_width="match_parent"
-        android:layout_height="37dp"
-        android:layout_marginLeft="50dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="16dp"
         android:layout_marginRight="50dp"
         android:layout_marginTop="16dp"
         android:orientation="horizontal"
@@ -41,12 +23,21 @@
         android:queryHint="Search for books"
         android:iconifiedByDefault="false"/>
 
+    <Spinner xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/discover_spinner"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="16dp"
+         android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
     <ListView
         android:id="@+id/bookList_homepage"
         android:layout_width="match_parent"
-        android:layout_height="766dp"
+        android:layout_height="match_parent"
         android:layout_alignBottom="@+id/home_page_navigation"
         android:layout_alignTop="@+id/Search_bar"
+        android:layout_marginBottom="50dp"
         android:layout_marginTop="44dp">
 
     </ListView>
@@ -54,9 +45,9 @@
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/home_page_navigation"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="?android:attr/windowBackground"
+        android:layout_height="50dp"
         android:layout_alignParentBottom="true"
+        android:background="?android:attr/windowBackground"
         app:menu="@menu/navigation" />
 
 </RelativeLayout>

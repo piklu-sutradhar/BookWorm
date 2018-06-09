@@ -11,9 +11,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import comp3350.bookworm.BusinessLogic.AccountManager;
-import comp3350.bookworm.BusinessLogic.DuplicateUsernameException;
-import comp3350.bookworm.BusinessLogic.InvalidCredentialException;
-import comp3350.bookworm.BusinessLogic.InvalidEmailAddressException;
+import comp3350.bookworm.Objects.DuplicateUsernameException;
+import comp3350.bookworm.Objects.InvalidCredentialException;
+import comp3350.bookworm.Objects.InvalidEmailAddressException;
 import comp3350.bookworm.Objects.Account;
 import comp3350.bookworm.R;
 

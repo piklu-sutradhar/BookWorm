@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -41,32 +41,49 @@
         android:id="@+id/account_logined"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical" >
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
         <TextView
             android:id="@+id/account_uername"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="16dp"
             android:text="User Name placeholer"
-            android:textAppearance="?android:textAppearanceLarge"
-            android:layout_margin="16dp" />
+            android:textAppearance="?android:textAppearanceLarge" />
 
         <Button
             android:id="@+id/btn_Purchase_History"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="start"
             android:layout_margin="16dp"
             android:text="Purchase History"
-            android:textAlignment="textStart"
-            android:layout_gravity="start"/>
+            android:textAlignment="textStart" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="Temporary Checkout Confirmation" />
 
         <Button
             android:id="@+id/btn_account_logout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="logout"
-            android:layout_margin="16dp"/>
+            android:layout_margin="16dp"
+            android:text="logout" />
 
     </LinearLayout>
 
-</android.support.constraint.ConstraintLayout>
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/account_page_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/navigation" />
+
+</RelativeLayout>

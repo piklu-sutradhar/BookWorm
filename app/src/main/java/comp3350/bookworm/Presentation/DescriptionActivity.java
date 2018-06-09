@@ -4,36 +4,32 @@ import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.util.ArrayList;
-
 import comp3350.bookworm.Application.Service;
-import comp3350.bookworm.BusinessLogic.BookManager;
 import comp3350.bookworm.Objects.Book;
 import comp3350.bookworm.Persistence.stubs.BookListStub;
 import comp3350.bookworm.R;
 
-import static comp3350.bookworm.R.layout.dialog_add_to_cart;
 
 public class DescriptionActivity extends AppCompatActivity {
-    private BookListStub bookListStub;
-    private AlertDialog dialog;
-    private Book whichBook;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_description);
 
-        bookListStub = Service.getBookListStub();
-        whichBook = bookListStub.searchBook( getIntent().getStringExtra( "BOOK_NAME" ) );
+        Bundle extras = getIntent().getExtras();
+        String bookName = "";
+        if(extras != null)
+            bookName = extras.getString("BookName", "C++");
+        Book book = Service.getBookListStub().getBook(bookName);
 
-        final Button buttonBuy = (Button) findViewById( R.id.buttonBuy );
+        final Button buttonBuy = (Button) findViewById( R.id.btn_buy );
         buttonBuy.setOnClickListener( new View.OnClickListener() {
             public void onClick( View v ) {
                 AlertDialog.Builder mBuilder = new AlertDialog.Builder( DescriptionActivity.this );
@@ -54,8 +50,8 @@ public class DescriptionActivity extends AppCompatActivity {
 //                        startActivity( intentCart );
 
                         Toast.makeText( DescriptionActivity.this,
-                                                R.string.not_implemented_msg,
-                                                Toast.LENGTH_SHORT ).show();
+                                R.string.not_implemented_msg,
+                                Toast.LENGTH_SHORT ).show();
                     }
                 });
 
@@ -65,31 +61,25 @@ public class DescriptionActivity extends AppCompatActivity {
             }
         });
 
-        final Button buttonPreview = (Button) findViewById( R.id.buttonPreview );
-        buttonPreview.setOnClickListener( new View.OnClickListener() {
-            public void onClick( View v ) {
-                Intent intentPreview = new Intent( DescriptionActivity.this, BookPreviewActivity.class);
-                intentPreview.putExtra( "PREVIEW_CONTENT", whichBook.getPreview() );
-                startActivity( intentPreview );
-            }
-        });
+        // TODO: not implemented yet
+//        final Button buttonPreview = (Button) findViewById( R.id.buttonPreview );
+//        buttonPreview.setOnClickListener( new View.OnClickListener() {
+//            public void onClick( View v ) {
+//                Intent intentPreview = new Intent( DescriptionActivity.this, BookPreviewActivity.class);
+//                intentPreview.putExtra( "PREVIEW_CONTENT", whichBook.getPreview() );
+//                startActivity( intentPreview );
+//            }
+//        });
 
-        final Button buttonSubmit = (Button) findViewById( R.id.buttonSubmit );
-        buttonSubmit.setOnClickListener( new View.OnClickListener() {
-            public void onClick( View v ) {
 
-            }
-        });
+        final TextView textView_title = (TextView) findViewById( R.id.textView_title );
+        textView_title.setText(book.getBookName());
 
-        final TextView textView_BookName = (TextView) findViewById( R.id.textView_bookName );
-        textView_BookName.setText( whichBook.getBookName() );
+        final TextView textView_author = (TextView) findViewById( R.id.textView_authorName );
+        textView_author.setText(book.getAuthorName());
 
-        final TextView textView_bookPrice = (TextView) findViewById( R.id.textView_bookPrice );
-        textView_bookPrice.setText( String.format( "%.2f" , whichBook.getBookPrice()) );
-
-        final TextView textView_authorName = (TextView) findViewById( R.id.textView_authorName );
-        textView_authorName.setText( whichBook.getAuthorName() );
-
+        final TextView textView_price = (TextView) findViewById( R.id.textView_price );
+        textView_price.setText(Double.toString(book.getBookPrice()));
 
 
     }
