@@ -8,17 +8,14 @@ import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.view.View;
-<<<<<<< HEAD
 import android.widget.EditText;
-=======
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
->>>>>>> 897e3713c345841ac0db71fd876fb72f5c98a7a8
 import android.widget.ListView;
 import android.widget.SearchView;
 import android.widget.Spinner;
 import android.widget.Toast;
-
+import comp3350.bookworm.BusinessLogic.BookAdapter;
 import java.util.ArrayList;
 
 import comp3350.bookworm.Application.Service;
@@ -27,6 +24,8 @@ import comp3350.bookworm.R;
 
 public class HomePage extends AppCompatActivity {
 
+    SearchListAdapter bookAdapter;
+    ListView listViewbooks;
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
@@ -66,35 +65,25 @@ public class HomePage extends AppCompatActivity {
         }, 300);
         //searchView.setOnQueryTextListener((SearchView.OnQueryTextListener) this);
         // perform set on query text listener event
-        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-            @Override
-            public boolean onQueryTextSubmit(String query) {
-                //ArrayList<Book> similarBooks = (ArrayList<Book>) Service.getBookListStub().getSimilarBooks(query);
-                //BookAdapter bookAdapter = new BookAdapter(this, similarBooks);
-                return false;
-            }
 
-<<<<<<< HEAD
-            @Override
-            public boolean onQueryTextChange(String newText) {
-                ArrayList<Book> similarBooks = (ArrayList<Book>) Service.getBookListStub().getSimilarBooks(newText);
-                //ListView similarBookList = (ListView) findViewById(R.id.bookList);
-                //BookAdapter similarBookAdapter = new BookAdapter(comp3350.bookworm.Presentation.HomePage, similarBooks);
-                return false;
-            }
-        });
+        listViewbooks = (ListView) findViewById(R.id.bookList_homepage);
+
+
         // Construct the data source
         ArrayList<Book> books = Service.getBookListStub().getBookList();
         // Create the adapter to convert the array to views
-        BookAdapter bookAdapter = new BookAdapter(this, books);
+        bookAdapter = new SearchListAdapter(this, books);
+        listViewbooks.setAdapter(bookAdapter);
         // Attach the adapter to a ListView
-        ListView listView = (ListView) findViewById(R.id.bookList_homepage);
-        listView.setAdapter(bookAdapter);
-=======
+
+
+       /*searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+
+        });*/
+
+
         // Construct ArrayAdapter for best-seller
         final BookArrayAdapter bestsellerBookArrayAdapter = new BookArrayAdapter(this, Service.getBookListStub().getBestSellerList());
->>>>>>> 897e3713c345841ac0db71fd876fb72f5c98a7a8
-
         // TODO: change ArrayList to real data
         final BookArrayAdapter suggestionBookArrayAdapter = new BookArrayAdapter(this, new ArrayList<Book>());
         final ListView listView = (ListView) findViewById(R.id.bookList_homepage);
@@ -125,5 +114,20 @@ public class HomePage extends AppCompatActivity {
             }
         });
 
+    }
+    //@Override
+    public boolean onQueryTextSubmit(String query) {
+        //ArrayList<Book> similarBooks = (ArrayList<Book>) Service.getBookListStub().getSimilarBooks(query);
+        //BookAdapter bookAdapter = new BookAdapter(this, similarBooks);
+        return false;
+    }
+
+
+    //@Override
+    public boolean onQueryTextChange(String newText) {
+
+        String text = newText;
+        bookAdapter.filter(text);
+        return false;
     }
 }

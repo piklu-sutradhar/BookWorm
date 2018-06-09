@@ -2,9 +2,11 @@ package comp3350.bookworm.BusinessLogic;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 
 import comp3350.bookworm.Application.Service;
 import comp3350.bookworm.Objects.Book;
+import comp3350.bookworm.Objects.BookNotFoundException;
 import comp3350.bookworm.Persistence.stubs.BookListStub;
 
 public class BookManager {
@@ -23,10 +25,8 @@ public class BookManager {
         bookListStub.insertBook(bookToadd);
     }
 
-    public Book SearchBook(String bookName)
-    {
+    public Book SearchBook(String bookName){
         Book bookToReturn = bookListStub.searchBook(bookName);
-
         return bookToReturn;
     }
     public void DeleteBook(String bookName)
@@ -38,13 +38,8 @@ public class BookManager {
     {
        return bookListStub.getBookList();
     }
-<<<<<<< HEAD
+
     public List<Book> searchSimilarBooks (String text){
-        return bookListStub.getSimilarBooks(text);
+        return (List<Book>)bookListStub.getSimilarBooks(text);
     }
-=======
-
-
-
->>>>>>> 897e3713c345841ac0db71fd876fb72f5c98a7a8
 }

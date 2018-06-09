@@ -2,6 +2,7 @@ package comp3350.bookworm.Persistence.stubs;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 
 import comp3350.bookworm.Objects.Book;
 import comp3350.bookworm.Persistence.BookListPersistence;
@@ -13,12 +14,10 @@ public class BookListStub implements BookListPersistence {
     {
         this.bookList = new ArrayList<Book>();
 
-<<<<<<< HEAD
         bookList.add(new Book("C++", "Daniel J. Fung", "Programming book", "Programming", 5.0));
         bookList.add(new Book("Java", "Daniel J. Fung", "Programming book", "Programming",5.0));
         bookList.add(new Book("Rubi on Reils", "Daniel J. Fung", "Programming book", "Programming", 5.0));
         bookList.add(new Book("C#", "Daniel J. Fung", "Programming book","Programming", 5.0));
-=======
         bookList.add(new Book("C++", "Daniel J. Fung", "Programming", 5.0, 0, 7));
         bookList.add(new Book("C++ : The Return of the C++ King", "Daniel J. Fung", "Programming", 5.0, 1, 8));
         bookList.add(new Book("Java", "Daniel J. Fung", "Programming", 5.0, 19, 88));
@@ -29,7 +28,6 @@ public class BookListStub implements BookListPersistence {
         bookList.add(new Book("How to Fix an ID10T error Vol 2", "Daniel J. Fung", "Programming", 5.0, 99, 4));
         bookList.add(new Book("How to Fix and ID10T error Vol 1", "Daniel J. Fung", "Programming", 5.0, 99, 5));
         bookList.add(new Book("Harry Potter and the Evil Potato", "Daniel J. Fung", "Fantasy", 5.0, 999, 6));
->>>>>>> 897e3713c345841ac0db71fd876fb72f5c98a7a8
     }
 
     @Override
@@ -45,10 +43,11 @@ public class BookListStub implements BookListPersistence {
     @Override
     public Book searchBook(String bookName) {
         Book bookToreturn = null;
-
-        for (int i = 0; i < bookList.size() && bookToreturn != null; i++) {
+        boolean found = false;
+        for (int i = 0; i < bookList.size() && !found; i++) {
             if(bookList.get(i).getBookName().equalsIgnoreCase(bookName)) {
                 bookToreturn = bookList.get(i);
+                found = true;
             }
         }
         return bookToreturn;

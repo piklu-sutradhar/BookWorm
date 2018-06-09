@@ -1,4 +1,4 @@
-package comp3350.bookworm.BusinessLogic;
+package comp3350.bookworm.Objects;
 
 public class BookNotFoundException extends Exception {
 

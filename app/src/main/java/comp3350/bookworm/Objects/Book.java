@@ -4,7 +4,7 @@ public class Book implements Comparable {
     private final String bookName;
     private final String authorName;
     private final String bookPreview;
-    private final String category;
+    private String category;
     private final double bookPrice;
     private double bookRating;
     private int bookSoldNum;
@@ -51,16 +51,13 @@ public class Book implements Comparable {
         return bookPrice;
     }
 
-<<<<<<< HEAD
     public String getCategory() {
         return category;
     }
-=======
+
     public void setBookRatin( double rating ) { bookRating = rating; }
 
     public double getBookRating() { return bookRating; }
->>>>>>> 897e3713c345841ac0db71fd876fb72f5c98a7a8
-
     public String toString() {
         return bookName + authorName + bookPreview + bookPrice;
     }
