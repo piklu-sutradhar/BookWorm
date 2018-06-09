@@ -31,10 +31,10 @@
         tools:layout_editor_absoluteY="488dp" />
 
     <TextView
-        android:id="@+id/textView_title"
+        android:id="@+id/textView_bookName"
         android:layout_width="241dp"
         android:layout_height="63dp"
-        android:text="Book Title"
+        android:text="Book Name"
         tools:layout_editor_absoluteX="345dp"
         tools:layout_editor_absoluteY="107dp" />
 
@@ -72,7 +72,7 @@
         tools:layout_editor_absoluteY="360dp" />
 
     <TextView
-        android:id="@+id/textView_price"
+        android:id="@+id/textView_bookPrice"
         android:layout_width="133dp"
         android:layout_height="60dp"
         android:text="Book Price"

@@ -81,11 +81,16 @@ public class DescriptionActivity extends AppCompatActivity {
             }
         });
 
-        final TextView textView_title = (TextView) findViewById( R.id.textView_title );
-        textView_title.setText( whichBook.getBookName() );
+        final TextView textView_BookName = (TextView) findViewById( R.id.textView_bookName );
+        textView_BookName.setText( whichBook.getBookName() );
 
-        final TextView textView_price = (TextView) findViewById( R.id.textView_price );
-        textView_price.setText( String.format( "%.2f" , whichBook.getBookPrice()) );
+        final TextView textView_bookPrice = (TextView) findViewById( R.id.textView_bookPrice );
+        textView_bookPrice.setText( String.format( "%.2f" , whichBook.getBookPrice()) );
+
+        final TextView textView_authorName = (TextView) findViewById( R.id.textView_authorName );
+        textView_authorName.setText( whichBook.getAuthorName() );
+
+
 
     }
 }
