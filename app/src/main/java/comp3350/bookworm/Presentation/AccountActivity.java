@@ -85,6 +85,14 @@ public class AccountActivity extends AppCompatActivity {
                startActivity(new Intent(AccountActivity.this, OrderHistoryActivity.class));
             }
         });
+
+        final Button tempBtn = (Button) findViewById(R.id.button4);
+        tempBtn.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v){
+
+                startActivity(new Intent(AccountActivity.this, PlaceOrderActivity.class));
+            }
+        });
     }
 
 }
