@@ -16,12 +16,13 @@ public class Book implements Comparable {
         this.bookSoldNum = 0;
     }
 
-    public Book( String bookName, String authorName, String bookPreview, double bookPrice, int numSold) {
+    public Book( String bookName, String authorName, String bookPreview, double bookPrice, double bookRating, int numSold) {
         this.bookName = bookName;
         this.authorName = authorName;
         this.bookPreview = bookPreview;
         this.bookPrice = bookPrice;
         this.bookSoldNum = numSold;
+        this.bookRating = bookRating;
     }
 
     public Book( String bookName, String authorName, String bookPreview, double bookPrice, double bookRating ) {

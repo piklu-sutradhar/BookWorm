@@ -61,7 +61,7 @@ public class HomePage extends AppCompatActivity {
         }, 300);
 
         // Construct ArrayAdapter for best-seller
-        final BookArrayAdapter bestsellerBookArrayAdapter = new BookArrayAdapter(this, Service.getBookListStub().getBookList());
+        final BookArrayAdapter bestsellerBookArrayAdapter = new BookArrayAdapter(this, Service.getBookListStub().getBestSellerList());
 
         // TODO: change ArrayList to real data
         final BookArrayAdapter suggestionBookArrayAdapter = new BookArrayAdapter(this, new ArrayList<Book>());
