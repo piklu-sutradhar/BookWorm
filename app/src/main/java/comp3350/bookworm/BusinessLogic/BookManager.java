@@ -1,6 +1,7 @@
 package comp3350.bookworm.BusinessLogic;
 
-import java.util.List;
+import java.util.ArrayList;
+import java.util.Collections;
 
 import comp3350.bookworm.Application.Service;
 import comp3350.bookworm.Objects.Book;
@@ -8,7 +9,7 @@ import comp3350.bookworm.Persistence.stubs.BookListStub;
 
 public class BookManager {
     private BookListStub bookListStub;
-    private List<Book> bookList;
+    private ArrayList<Book> bookList;
     private Book book;
 
     public BookManager(){
@@ -32,11 +33,18 @@ public class BookManager {
     {
         bookListStub.deleteBook(bookName);
     }
-    public List<Book> GetBookList()
+
+    public ArrayList<Book> GetBookList()
     {
        return bookListStub.getBookList();
     }
+<<<<<<< HEAD
     public List<Book> searchSimilarBooks (String text){
         return bookListStub.getSimilarBooks(text);
     }
+=======
+
+
+
+>>>>>>> 897e3713c345841ac0db71fd876fb72f5c98a7a8
 }

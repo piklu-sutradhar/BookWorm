@@ -9,9 +9,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 import comp3350.bookworm.Application.Service;
-import comp3350.bookworm.BusinessLogic.BookAdapter;
-import comp3350.bookworm.BusinessLogic.NullAccountException;
-import comp3350.bookworm.Objects.Account;
+import comp3350.bookworm.Objects.InvalidAccountException;
 import comp3350.bookworm.Objects.Book;
 import comp3350.bookworm.R;
 
@@ -22,18 +20,16 @@ public class OrderHistoryActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_order_history);
 
-        String loggedinUser = Service.getLoginUserPersistenceStub().getUsername();
-
         try {
             // Construct the data source
-            ArrayList<Book> books = Service.getOrderHistoryStub().getOrderHistory(loggedinUser);
+            ArrayList<Book> books = Service.getOrderHistoryStub().getOrderHistoryCurrentUser();
             // Create the adapter to convert the array to views
-            BookAdapter bookAdapter = new BookAdapter(this, books);
+            BookArrayAdapter bookArrayAdapter = new BookArrayAdapter(this, books);
             // Attach the adapter to a ListView
             ListView listView = (ListView) findViewById(R.id.bookList_orderhistory);
-            listView.setAdapter(bookAdapter);
+            listView.setAdapter(bookArrayAdapter);
         }
-        catch (NullAccountException e) {
+        catch (InvalidAccountException e) {
             int duration = Toast.LENGTH_LONG;
             Context context = getApplicationContext();
 

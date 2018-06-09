@@ -23,4 +23,15 @@
     <string name="no_account_yet_create_one">No account yet? Create one</string>
     <string name="title_review">Reviews</string>
     <string name="InvalidUsername">User does not exist...</string>
+
+    <string name="title_best_seller">Best-seller</string>
+    <string name="title_best_for_you">Best For You</string>
+    <string name="best_seller">Best-seller</string>
+    <string name="best_choice">Best choice</string>
+
+    <string name="msg_add_to_cart">successfully added into the shopping cart!</string>
+    <string name="btn_back_to_list">go back to book list</string>
+    <string name="btn_check_cart">check my shopping cart</string>
+    <string name="not_implemented_msg">Sorry, This feature is not implemented yet.</string>
+
 </resources>

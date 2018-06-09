@@ -20,7 +20,9 @@
         <activity android:name=".Presentation.SignupActivity" />
         <activity android:name=".Presentation.AccountActivity" />
         <activity android:name=".Presentation.DescriptionActivity" />
+        <activity android:name=".Presentation.BookPreviewActivity"></activity>
         <activity android:name=".Presentation.OrderHistoryActivity" />
+        <activity android:name=".Presentation.LibraryActivity"></activity>
     </application>
 
 </manifest>

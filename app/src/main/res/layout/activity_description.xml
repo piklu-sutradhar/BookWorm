@@ -1,83 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Presentation.DescriptionActivity">
+    tools:context=".Presentation.DescriptionActivity"
+    android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="329dp"
-        android:layout_height="425dp"
-        android:src="@android:color/holo_blue_light"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="16dp" />
-
-    <Button
-        android:id="@+id/buttonBuy"
-        android:layout_width="311dp"
-        android:layout_height="62dp"
-        android:text="Buy"
-        tools:layout_editor_absoluteX="151dp"
-        tools:layout_editor_absoluteY="572dp" />
-
-    <Button
-        android:id="@+id/buttonPreview"
-        android:layout_width="309dp"
-        android:layout_height="58dp"
-        android:text="Preview"
-        tools:layout_editor_absoluteX="151dp"
-        tools:layout_editor_absoluteY="488dp" />
-
-    <TextView
-        android:id="@+id/textView_title"
-        android:layout_width="221dp"
-        android:layout_height="63dp"
-        android:text="Book Title"
-        tools:layout_editor_absoluteX="364dp"
-        tools:layout_editor_absoluteY="16dp" />
-
-    <TextView
-        android:id="@+id/textView_price"
-        android:layout_width="105dp"
-        android:layout_height="24dp"
-        android:text="Price"
-        tools:layout_editor_absoluteX="424dp"
-        tools:layout_editor_absoluteY="146dp" />
-
-    <TextView
-        android:id="@+id/textView_reviewPoint"
-        android:layout_width="221dp"
-        android:layout_height="55dp"
-        android:text="Review Point"
-        tools:layout_editor_absoluteX="365dp"
-        tools:layout_editor_absoluteY="208dp" />
-
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="463dp"
-        android:layout_height="52dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="747dp" />
-
-    <Button
-        android:id="@+id/buttonSubmit"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Submit"
-        tools:layout_editor_absoluteX="497dp"
-        tools:layout_editor_absoluteY="746dp" />
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="224dp"
+            android:layout_height="239dp"
+            android:src="@drawable/default_book_icon" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textView_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:text="Book Title" />
+
+            <TextView
+                android:id="@+id/textView_authorName"
+                android:layout_width="105dp"
+                android:layout_height="30dp"
+                android:layout_margin="20dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:text="author name"/>
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/textView_price"
+                android:layout_width="105dp"
+                android:layout_height="24dp"
+                android:layout_margin="20dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:text="Price"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_buy"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_margin="16dp"
+        android:text="Buy Now"/>
 
     <TextView
-        android:id="@+id/textView_authorName"
-        android:layout_width="105dp"
-        android:layout_height="30dp"
-        android:text="author name"
-        tools:layout_editor_absoluteX="425dp"
-        tools:layout_editor_absoluteY="94dp" />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sold by Bookwarm Digital Service LLC."
+        android:textAlignment="center"/>
 
-</android.support.constraint.ConstraintLayout>
+
+    <!--attributes for later iterations-->
+    <!--<Button-->
+        <!--android:id="@+id/buttonPreview"-->
+        <!--android:layout_width="309dp"-->
+        <!--android:layout_height="58dp"-->
+        <!--android:text="Preview"-->
+        <!--tools:layout_editor_absoluteX="151dp"-->
+        <!--tools:layout_editor_absoluteY="488dp" />-->
+    <!--<EditText-->
+        <!--android:id="@+id/editText"-->
+        <!--android:layout_width="463dp"-->
+        <!--android:layout_height="52dp"-->
+        <!--android:ems="10"-->
+        <!--android:inputType="textPersonName"-->
+        <!--android:text="Name"-->
+        <!--tools:layout_editor_absoluteX="16dp"-->
+        <!--tools:layout_editor_absoluteY="747dp" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView_reviewPoint"-->
+        <!--android:layout_width="221dp"-->
+        <!--android:layout_height="55dp"-->
+        <!--android:text="Review Point"-->
+        <!--tools:layout_editor_absoluteX="365dp"-->
+        <!--tools:layout_editor_absoluteY="208dp" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/buttonSubmit"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Submit"-->
+        <!--tools:layout_editor_absoluteX="497dp"-->
+        <!--tools:layout_editor_absoluteY="746dp" />-->
+
+
+</LinearLayout>
