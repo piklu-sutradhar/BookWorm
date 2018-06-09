@@ -28,6 +28,7 @@
         <activity android:name="comp3350.bookworm.Presentation.SignupActivity" />
         <activity android:name="comp3350.bookworm.Presentation.AccountActivity" />
         <activity android:name="comp3350.bookworm.Presentation.DescriptionActivity" />
+        <activity android:name="comp3350.bookworm.Presentation.OrderHistoryActivity" />
 
         <meta-data
             android:name="android.support.VERSION"

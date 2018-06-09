@@ -43,12 +43,8 @@ public class HomePage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
-
-<<<<<<< HEAD
 //        mTextMessage = (TextView) findViewById(R.id.home_page_message);
         //ListViewAdapter viewAdapter;
-=======
->>>>>>> 168549f2dfb7f42603bd31cb9f8eafa87c815eb7
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.home_page_navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
@@ -72,7 +68,7 @@ public class HomePage extends AppCompatActivity {
             @Override
             public boolean onQueryTextChange(String newText) {
                 ArrayList<Book> similarBooks = (ArrayList<Book>) Service.getBookListStub().getSimilarBooks(newText);
-                ListView similarBookList = (ListView) findViewById(R.id.bookList);
+                //ListView similarBookList = (ListView) findViewById(R.id.bookList);
                 //BookAdapter similarBookAdapter = new BookAdapter(comp3350.bookworm.Presentation.HomePage, similarBooks);
                 return false;
             }
