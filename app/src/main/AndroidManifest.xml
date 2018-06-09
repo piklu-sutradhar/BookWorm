@@ -22,11 +22,9 @@
         <activity android:name=".Presentation.DescriptionActivity" />
         <activity android:name=".Presentation.BookPreviewActivity"></activity>
         <activity android:name=".Presentation.OrderHistoryActivity" />
-<<<<<<< HEAD
         <activity android:name=".Presentation.PlaceOrderActivity"/>
-=======
         <activity android:name=".Presentation.LibraryActivity"></activity>
->>>>>>> develop
     </application>
 
 </manifest>
+
