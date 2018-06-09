@@ -9,7 +9,7 @@ import comp3350.bookworm.R;
 
 public class PlaceOrderActivity extends AppCompatActivity {
 
-    String fee = "CAD$";
+    String fee = "CAD$ ";
     double figure = 0.00;
 
     @Override
