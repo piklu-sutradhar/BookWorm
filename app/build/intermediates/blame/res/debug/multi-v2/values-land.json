@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\sutra\\Desktop\\piklu's_data\\Current Courses\\Comp3350\\Project\\codeX\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
+            "outputFile": "/Users/haesookim/Documents/git/codeX/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\sutra\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.4.0.aar\\e983ca2a1ba48474859923910a20aeb3\\res\\values-land\\values-land.xml",
+                    "source": "/Users/haesookim/.gradle/caches/transforms-1/files-1.1/design-25.4.0.aar/b34c3d9c23873270d004d3002a53d1b5/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\sutra\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.4.0.aar\\2847cdd3db4bcc1185d2a2ed6a050afe\\res\\values-land\\values-land.xml",
+                    "source": "/Users/haesookim/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.4.0.aar/9965214b313ed13dbd0d971d63913282/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
