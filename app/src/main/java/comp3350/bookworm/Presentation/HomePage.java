@@ -1,5 +1,7 @@
 package comp3350.bookworm.Presentation;
 
+import android.app.SearchManager;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -54,7 +56,8 @@ public class HomePage extends AppCompatActivity {
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.home_page_navigation);
         navigation.setSelectedItemId(R.id.navigation_discover);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
-
+        /*SearchManager searchManager =
+                (SearchManager) getSystemService(Context.SEARCH_SERVICE);
         // Handle query hint
         final SearchView searchView = (SearchView) findViewById(R.id.Search_bar);
         new Handler().postDelayed(new Runnable() {
@@ -77,8 +80,21 @@ public class HomePage extends AppCompatActivity {
         // Attach the adapter to a ListView
 
 
-       /*searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+       searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+           //@Override
+           public boolean onQueryTextSubmit(String query) {
+               return false;
+           }
 
+
+           //@Override
+           public boolean onQueryTextChange(String newText) {
+
+               String text = newText;
+               //if(text.length() < 1)
+               HomePage.this.bookAdapter.filter(text);
+               return false;
+           }
         });*/
 
 
@@ -115,19 +131,5 @@ public class HomePage extends AppCompatActivity {
         });
 
     }
-    //@Override
-    public boolean onQueryTextSubmit(String query) {
-        //ArrayList<Book> similarBooks = (ArrayList<Book>) Service.getBookListStub().getSimilarBooks(query);
-        //BookAdapter bookAdapter = new BookAdapter(this, similarBooks);
-        return false;
-    }
 
-
-    //@Override
-    public boolean onQueryTextChange(String newText) {
-
-        String text = newText;
-        bookAdapter.filter(text);
-        return false;
-    }
 }
