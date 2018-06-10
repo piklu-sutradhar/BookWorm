@@ -39,20 +39,6 @@ public class BookListStub implements BookListPersistence {
         this.bookList = bookList;
     }
 
-    // TODO: this doesn't work!!!!!!!!!!!
-    @Override
-    public Book searchBook(String bookName) {
-        Book bookToreturn = null;
-        boolean found = false;
-        for (int i = 0; i < bookList.size() && !found; i++) {
-            if(bookList.get(i).getBookName().equalsIgnoreCase(bookName)) {
-                bookToreturn = bookList.get(i);
-                found = true;
-            }
-        }
-        return bookToreturn;
-    }
-
     // TODO: this works!!!
     public Book getBook(String bookName) {
         for(Book book : bookList) {

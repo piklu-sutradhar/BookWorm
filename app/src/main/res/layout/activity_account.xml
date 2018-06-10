@@ -61,8 +61,6 @@
             android:layout_margin="16dp"
             android:text="Purchase History"
             android:textAlignment="textStart" />
-<<<<<<< HEAD
-=======
 
         <Button
             android:id="@+id/button4"
@@ -70,7 +68,6 @@
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
             android:text="Temporary Checkout Confirmation" />
->>>>>>> 5b2a8708830ac37f220e60eedc5fc04e36df3e18
 
         <Button
             android:id="@+id/btn_account_logout"

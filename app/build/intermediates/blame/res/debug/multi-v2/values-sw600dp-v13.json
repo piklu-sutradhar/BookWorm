@@ -4,7 +4,7 @@
             "outputFile": "C:\\Users\\sutra\\Desktop\\piklu's_data\\Current Courses\\Comp3350\\Project\\codeX\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\sutra\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.4.0.aar\\02fc8f678d6b9c17dab67f2f462cdf6c\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "source": "C:\\Users\\sutra\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.4.0.aar\\2847cdd3db4bcc1185d2a2ed6a050afe\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\sutra\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.4.0.aar\\0068f906e42a9b4cb4a1171ed73d008b\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "source": "C:\\Users\\sutra\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.4.0.aar\\e983ca2a1ba48474859923910a20aeb3\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",

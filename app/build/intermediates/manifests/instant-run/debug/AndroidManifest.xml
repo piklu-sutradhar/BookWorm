@@ -30,6 +30,7 @@
         <activity android:name="comp3350.bookworm.Presentation.DescriptionActivity" />
         <activity android:name="comp3350.bookworm.Presentation.BookPreviewActivity" />
         <activity android:name="comp3350.bookworm.Presentation.OrderHistoryActivity" />
+        <activity android:name="comp3350.bookworm.Presentation.PlaceOrderActivity" />
         <activity android:name="comp3350.bookworm.Presentation.LibraryActivity" />
 
         <meta-data

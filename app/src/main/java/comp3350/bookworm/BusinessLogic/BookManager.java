@@ -25,8 +25,8 @@ public class BookManager {
         bookListStub.insertBook(bookToadd);
     }
 
-    public Book SearchBook(String bookName){
-        Book bookToReturn = bookListStub.searchBook(bookName);
+    public Book SearchBook(String bookName) throws  BookNotFoundException{
+        Book bookToReturn = bookListStub.getBook(bookName);
         return bookToReturn;
     }
     public void DeleteBook(String bookName)
