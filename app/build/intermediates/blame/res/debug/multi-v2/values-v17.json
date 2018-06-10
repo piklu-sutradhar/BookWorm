@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\sutra\\Desktop\\piklu's_data\\Current Courses\\Comp3350\\Project\\codeX\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v17\\values-v17.xml",
+            "outputFile": "/Users/haesookim/Documents/git/codeX/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v17/values-v17.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\sutra\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.4.0.aar\\2847cdd3db4bcc1185d2a2ed6a050afe\\res\\values-v17\\values-v17.xml",
+                    "source": "/Users/haesookim/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.4.0.aar/9965214b313ed13dbd0d971d63913282/res/values-v17/values-v17.xml",
                     "from": {
                         "startLines": "2,5,9,12,15,18,22,26,29,32,35,39,42,46",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
