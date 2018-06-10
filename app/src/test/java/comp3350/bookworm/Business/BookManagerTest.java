@@ -52,7 +52,7 @@ public class BookManagerTest {
         }
         catch (BookNotFoundException e)
         {
-
+            fail("Failed not expected");
         }
         assertTrue(bookToTest == null);
 
@@ -75,7 +75,7 @@ public class BookManagerTest {
         }
         catch (BookNotFoundException e)
         {
-
+            fail("Failed not expected");
         }
         assertTrue(bookFound.getBookName().equals("Bengali"));
 
@@ -99,6 +99,7 @@ public class BookManagerTest {
         catch (BookNotFoundException e)
         {
             System.out.println(e.getMessage());
+            fail("Failed not expected");
         }
         assertTrue(bookFound == null);
 
@@ -117,11 +118,11 @@ public class BookManagerTest {
         try{
             bookManager.DeleteBook("Game of thrones");
             bookFound = bookManager.SearchBook("Game of thrones");
-            //fail("Failed expected");
+
         }
         catch (BookNotFoundException e)
         {
-
+            fail("Failed not expected");
         }
 
 
