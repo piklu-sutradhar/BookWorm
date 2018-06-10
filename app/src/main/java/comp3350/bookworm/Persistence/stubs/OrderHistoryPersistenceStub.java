@@ -18,8 +18,8 @@ public class OrderHistoryPersistenceStub implements OrderHistoryPersistence {
         accountOfBooks = new ArrayList<>();
         ArrayList<Book> bookList = new ArrayList<>();
 
-        bookList.add(new Book("C++", "Daniel J. Fung", "Programming book", 5.0));
-        bookList.add(new Book("Java", "Daniel J. Fung", "Programming book", 5.0));
+        bookList.add(new Book("C++", "Daniel J. Fung", "Programming book", "Programming",5.0));
+        bookList.add(new Book("Java", "Daniel J. Fung", "Programming book", "Programming",5.0));
 
         for(int i = 0; i < accounts.size(); i++ )
         {

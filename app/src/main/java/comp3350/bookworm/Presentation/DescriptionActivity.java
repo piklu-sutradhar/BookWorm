@@ -17,6 +17,11 @@ import comp3350.bookworm.R;
 
 
 public class DescriptionActivity extends AppCompatActivity {
+<<<<<<< HEAD
+=======
+    private BookListStub bookListStub;
+    private AlertDialog dialog;
+>>>>>>> 796ba1d5e3bcba6ad59bad7b8161d18b4aad3f5b
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

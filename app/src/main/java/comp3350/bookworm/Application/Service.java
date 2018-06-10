@@ -3,6 +3,8 @@ package comp3350.bookworm.Application;
 import comp3350.bookworm.Persistence.stubs.AccountPersistenceStub;
 import comp3350.bookworm.Persistence.stubs.BookListStub;
 import comp3350.bookworm.Persistence.stubs.LoginUserPersistenceStub;
+import comp3350.bookworm.Persistence.stubs.BookListStub;
+import comp3350.bookworm.Persistence.stubs.LoginUserPersistenceStub;
 import comp3350.bookworm.Persistence.stubs.OrderHistoryPersistenceStub;
 
 public class Service {
@@ -48,5 +50,4 @@ public class Service {
         return loginUserPersistenceStub;
     }
 
-    //
 }
