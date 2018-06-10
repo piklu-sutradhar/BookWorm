@@ -2,7 +2,10 @@ package comp3350.bookworm.Persistence.stubs;
 
 import java.util.ArrayList;
 import java.util.Collections;
+<<<<<<< HEAD
+=======
 import java.util.List;
+>>>>>>> 796ba1d5e3bcba6ad59bad7b8161d18b4aad3f5b
 
 import comp3350.bookworm.Objects.Book;
 import comp3350.bookworm.Persistence.BookListPersistence;
@@ -14,10 +17,13 @@ public class BookListStub implements BookListPersistence {
     {
         this.bookList = new ArrayList<Book>();
 
+<<<<<<< HEAD
+=======
         bookList.add(new Book("C++", "Daniel J. Fung", "Programming book", "Programming", 5.0));
         bookList.add(new Book("Java", "Daniel J. Fung", "Programming book", "Programming",5.0));
         bookList.add(new Book("Rubi on Reils", "Daniel J. Fung", "Programming book", "Programming", 5.0));
         bookList.add(new Book("C#", "Daniel J. Fung", "Programming book","Programming", 5.0));
+>>>>>>> 796ba1d5e3bcba6ad59bad7b8161d18b4aad3f5b
         bookList.add(new Book("C++", "Daniel J. Fung", "Programming", 5.0, 0, 7));
         bookList.add(new Book("C++ : The Return of the C++ King", "Daniel J. Fung", "Programming", 5.0, 1, 8));
         bookList.add(new Book("Java", "Daniel J. Fung", "Programming", 5.0, 19, 88));
@@ -37,6 +43,27 @@ public class BookListStub implements BookListPersistence {
 
     public void setBookList(ArrayList<Book> bookList) {
         this.bookList = bookList;
+    }
+
+<<<<<<< HEAD
+    // TODO: this doesn't work!!!!!!!!!!!
+    @Override
+    public Book searchBook(String bookName) {
+        Book bookToreturn = null;
+
+        for (int i = 0; i < bookList.size() && bookToreturn != null; i++) {
+            if(bookList.get(i).getBookName().equalsIgnoreCase(bookName)) {
+                bookToreturn = bookList.get(i);
+            }
+=======
+    // TODO: this works!!!
+    public Book getBook(String bookName) {
+        for(Book book : bookList) {
+            if(book.getBookName().equals(bookName))
+                return book;
+>>>>>>> 796ba1d5e3bcba6ad59bad7b8161d18b4aad3f5b
+        }
+        return null;
     }
 
     // TODO: this works!!!

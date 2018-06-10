@@ -51,11 +51,15 @@ public class Book implements Comparable {
         return bookPrice;
     }
 
+<<<<<<< HEAD
+    public void setBookRating( double rating ) { bookRating = rating; }
+=======
     public String getCategory() {
         return category;
     }
 
     public void setBookRatin( double rating ) { bookRating = rating; }
+>>>>>>> 796ba1d5e3bcba6ad59bad7b8161d18b4aad3f5b
 
     public double getBookRating() { return bookRating; }
     public String toString() {
