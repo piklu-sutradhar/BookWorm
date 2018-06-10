@@ -74,42 +74,6 @@
 
     <!--attributes for later iterations-->
     <!--<Button-->
-<<<<<<< HEAD
-    <!--android:id="@+id/buttonPreview"-->
-    <!--android:layout_width="309dp"-->
-    <!--android:layout_height="58dp"-->
-    <!--android:text="Preview"-->
-    <!--tools:layout_editor_absoluteX="151dp"-->
-    <!--tools:layout_editor_absoluteY="488dp" />-->
-    <!--<EditText-->
-    <!--android:id="@+id/editText"-->
-    <!--android:layout_width="463dp"-->
-    <!--android:layout_height="52dp"-->
-    <!--android:ems="10"-->
-    <!--android:inputType="textPersonName"-->
-    <!--android:text="Name"-->
-    <!--tools:layout_editor_absoluteX="16dp"-->
-    <!--tools:layout_editor_absoluteY="747dp" />-->
-
-    <!--<TextView-->
-    <!--android:id="@+id/textView_reviewPoint"-->
-    <!--android:layout_width="221dp"-->
-    <!--android:layout_height="55dp"-->
-    <!--android:text="Review Point"-->
-    <!--tools:layout_editor_absoluteX="365dp"-->
-    <!--tools:layout_editor_absoluteY="208dp" />-->
-
-    <!--<Button-->
-    <!--android:id="@+id/buttonSubmit"-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:text="Submit"-->
-    <!--tools:layout_editor_absoluteX="497dp"-->
-    <!--tools:layout_editor_absoluteY="746dp" />-->
-
-
-</LinearLayout>
-=======
         <!--android:id="@+id/buttonPreview"-->
         <!--android:layout_width="309dp"-->
         <!--android:layout_height="58dp"-->
@@ -144,4 +108,3 @@
 
 
 </LinearLayout>
->>>>>>> 796ba1d5e3bcba6ad59bad7b8161d18b4aad3f5b

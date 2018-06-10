@@ -2,10 +2,7 @@ package comp3350.bookworm.BusinessLogic;
 
 import java.util.ArrayList;
 import java.util.Collections;
-<<<<<<< HEAD
-=======
 import java.util.List;
->>>>>>> 796ba1d5e3bcba6ad59bad7b8161d18b4aad3f5b
 
 import comp3350.bookworm.Application.Service;
 import comp3350.bookworm.Objects.Book;
@@ -52,12 +49,7 @@ public class BookManager {
        return bookListStub.getBookList();
     }
 
-<<<<<<< HEAD
-
-
-=======
     public List<Book> searchSimilarBooks (String text){
         return (List<Book>)bookListStub.getSimilarBooks(text);
     }
->>>>>>> 796ba1d5e3bcba6ad59bad7b8161d18b4aad3f5b
 }

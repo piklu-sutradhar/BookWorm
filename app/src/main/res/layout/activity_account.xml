@@ -51,11 +51,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
-<<<<<<< HEAD
-            android:text="User Name placeholer"
-=======
             android:text="@string/user_name_placeholer"
->>>>>>> 796ba1d5e3bcba6ad59bad7b8161d18b4aad3f5b
             android:textAppearance="?android:textAppearanceLarge" />
 
         <Button
@@ -63,18 +59,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="start"
-<<<<<<< HEAD
-            android:layout_margin="16dp"
-            android:text="Purchase History"
-            android:textAlignment="textStart" />
-
-        <Button
-            android:id="@+id/button4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:text="Temporary Checkout Confirmation" />
-=======
             android:layout_margin="16dp"
             android:text="@string/purchase_history"
             android:textAlignment="textStart" />
@@ -85,18 +69,13 @@
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
             android:text="@string/temporary_checkout_confirmation" />
->>>>>>> 796ba1d5e3bcba6ad59bad7b8161d18b4aad3f5b
 
         <Button
             android:id="@+id/btn_account_logout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
-<<<<<<< HEAD
-            android:text="logout" />
-=======
             android:text="@string/logout" />
->>>>>>> 796ba1d5e3bcba6ad59bad7b8161d18b4aad3f5b
 
     </LinearLayout>
 

@@ -17,11 +17,8 @@ import comp3350.bookworm.R;
 
 
 public class DescriptionActivity extends AppCompatActivity {
-<<<<<<< HEAD
-=======
     private BookListStub bookListStub;
     private AlertDialog dialog;
->>>>>>> 796ba1d5e3bcba6ad59bad7b8161d18b4aad3f5b
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,8 +52,8 @@ public class DescriptionActivity extends AppCompatActivity {
 //                        startActivity( intentCart );
 
                         Toast.makeText( DescriptionActivity.this,
-                                R.string.not_implemented_msg,
-                                Toast.LENGTH_SHORT ).show();
+                                                R.string.not_implemented_msg,
+                                                Toast.LENGTH_SHORT ).show();
                     }
                 });
 
