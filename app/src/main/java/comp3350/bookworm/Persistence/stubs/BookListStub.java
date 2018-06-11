@@ -1,10 +1,12 @@
 package comp3350.bookworm.Persistence.stubs;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 import comp3350.bookworm.Objects.Book;
+import comp3350.bookworm.Objects.BookNotFoundException;
+import comp3350.bookworm.Objects.DuplicateBookException;
+import comp3350.bookworm.Objects.InvalidBookException;
 import comp3350.bookworm.Persistence.BookListPersistence;
 
 public class BookListStub implements BookListPersistence {
@@ -12,7 +14,7 @@ public class BookListStub implements BookListPersistence {
 
     public BookListStub()
     {
-        this.bookList = new ArrayList<Book>();
+        this.bookList = new ArrayList<>();
 
         bookList.add(new Book("C++", "Daniel J. Fung", "Programming book", "Programming", 10.0, 5.0, 1));
         bookList.add(new Book("Java", "Daniel J. Fung", "Programming book", "Programming", 10.0, 5.0, 2));
@@ -28,28 +30,38 @@ public class BookListStub implements BookListPersistence {
     }
 
     @Override
-    public void insertBook(Book book) {
+    public void insertBook(Book book) throws DuplicateBookException, InvalidBookException {
+        if(book.getBookName().isEmpty())
+            throw new InvalidBookException();
+
+        for(Book b : bookList) {
+            if(b.getBookName().equals(book.getBookName()))
+                throw new DuplicateBookException();
+        }
         this.bookList.add(book);
     }
 
+    @Override
     public void setBookList(ArrayList<Book> bookList) {
         this.bookList = bookList;
     }
 
-    // TODO: this works!!!
-    public Book getBook(String bookName) {
+    @Override
+    public Book getBook(String bookName) throws BookNotFoundException{
         for(Book book : bookList) {
             if(book.getBookName().equals(bookName))
                 return book;
         }
-        return null;
+        throw new BookNotFoundException();
     }
 
+    @Override
     public ArrayList<Book> getBookList() {
         return bookList;
     }
 
-    public void deleteBook(String bookName)
+    @Override
+    public void deleteBook(String bookName) throws BookNotFoundException
     {
         boolean deleted = false;
         for (int i = 0; i < bookList.size() && deleted == false; i++)
@@ -60,13 +72,16 @@ public class BookListStub implements BookListPersistence {
                 deleted = true;
             }
         }
+        if(!deleted)
+            throw new BookNotFoundException();
     }
+
+    @Override
     public List<Book> getSimilarBooks(String text)
     {
         List<Book> returnList = new ArrayList<Book>();
 
-        for (Book current:bookList
-             ) {
+        for (Book current:bookList) {
             int letterMatched = 0;
             for (int i = 0; i < text.length(); i++)
             {

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\jeff.ARMAD\\Desktop\\Comp 3350\\codeXDevWork\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
+            "outputFile": "/Users/liminghao/Developer/Bookworm/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\jeff.ARMAD\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.4.0.aar\\3d33b21f979fc8393311506c92cd8f15\\res\\values-v23\\values-v23.xml",
+                    "source": "/Users/liminghao/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.4.0.aar/880509bf405d7bcf2acf937cb8e48865/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,19,32,33,34,35,36",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",

@@ -14,7 +14,6 @@ import java.util.ArrayList;
 import comp3350.bookworm.Objects.Book;
 import comp3350.bookworm.R;
 
-import static android.support.v4.content.ContextCompat.startActivity;
 
 public class BookArrayAdapter extends ArrayAdapter<Book> {
     private final Context mContext;
@@ -42,7 +41,6 @@ public class BookArrayAdapter extends ArrayAdapter<Book> {
 
 
         Button btButton = (Button) convertView.findViewById(R.id.btn_arrayAdapter_book);
-//        btButton.setTag(book);
         btButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

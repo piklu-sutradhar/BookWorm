@@ -6,8 +6,6 @@ public interface LoginUserPersistence {
 
     String getUsername();
 
-//    Account getUserAccount();
-
     void setUsername(String username);
 
     Boolean loggedIn();

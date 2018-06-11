@@ -11,11 +11,14 @@ import android.widget.GridView;
 import android.widget.LinearLayout;
 
 import comp3350.bookworm.Application.Service;
+import comp3350.bookworm.BusinessLogic.BookManager;
 import comp3350.bookworm.Objects.Account;
+import comp3350.bookworm.Objects.Book;
 import comp3350.bookworm.Objects.InvalidAccountException;
 import comp3350.bookworm.R;
 
 public class LibraryActivity extends AppCompatActivity {
+    private BookManager bookManager;
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -43,20 +46,22 @@ public class LibraryActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_library);
 
+        bookManager = new BookManager();
+
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.library_navigation);
         navigation.setSelectedItemId(R.id.navigation_library);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
-        LinearLayout linearLayout = (LinearLayout) findViewById(R.id.library_visitor);
-        linearLayout.setVisibility(View.INVISIBLE);
+        LinearLayout visitorMode = (LinearLayout) findViewById(R.id.library_visitor);
+        visitorMode.setVisibility(View.INVISIBLE);
 
         try {
             GridView gridView = (GridView) findViewById(R.id.library_gridView);
-            BookGripAdapter booksAdapter = new BookGripAdapter(this, Service.getOrderHistoryStub().getOrderHistoryCurrentUser());
+            BookGripAdapter booksAdapter = new BookGripAdapter(this, bookManager.getOrderHistoryForCurrentUser());
             gridView.setAdapter(booksAdapter);
         }
         catch (InvalidAccountException e) {
-            linearLayout.setVisibility(View.VISIBLE);
+            visitorMode.setVisibility(View.VISIBLE);
         }
     }
 }

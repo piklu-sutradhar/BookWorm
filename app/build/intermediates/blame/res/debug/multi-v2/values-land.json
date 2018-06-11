@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\jeff.ARMAD\\Desktop\\Comp 3350\\codeXDevWork\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
+            "outputFile": "/Users/liminghao/Developer/Bookworm/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\jeff.ARMAD\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.4.0.aar\\3d33b21f979fc8393311506c92cd8f15\\res\\values-land\\values-land.xml",
+                    "source": "/Users/liminghao/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.4.0.aar/880509bf405d7bcf2acf937cb8e48865/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\jeff.ARMAD\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.4.0.aar\\5a96ed88262ce0798f2252051ee24251\\res\\values-land\\values-land.xml",
+                    "source": "/Users/liminghao/.gradle/caches/transforms-1/files-1.1/design-25.4.0.aar/c138007cbf608fc7c3f91fd55875b858/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

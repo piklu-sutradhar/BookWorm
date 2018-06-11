@@ -18,31 +18,16 @@ public class OrderHistoryPersistenceStub implements OrderHistoryPersistence {
         accountOfBooks = new ArrayList<>();
         ArrayList<Book> bookList = new ArrayList<>();
 
-        bookList.add(new Book("C++", "Daniel J. Fung", "Programming book", "Programming",5.0));
-        bookList.add(new Book("Java", "Daniel J. Fung", "Programming book", "Programming",5.0));
+        bookList.add(new Book("Steamy Romance 5: The Reckoning", "Daniel J. Fung", "Romance book", "Romance", 10.0, 5.0, 8));
+        bookList.add(new Book("How to Fix an ID10T error Vol 2", "Daniel J. Fung", "Programming book", "Programming", 10.0, 5.0, 9));
+        bookList.add(new Book("How to Fix an ID10T error Vol 1", "Daniel J. Fung", "Programming book", "Programming", 10.0, 5.0, 10));
+        bookList.add(new Book("Harry Potter and the Evil Potato", "Daniel J. Fung", "Fantasy book", "Fantasy", 10.0, 5.0, 11));
 
         for(int i = 0; i < accounts.size(); i++ )
         {
             accountOfBooks.add(bookList);
         }
     }
-
-//    @Override
-//    public ArrayList<Book> getOrderHistory(String username) throws InvalidAccountException {
-//        ArrayList<Book> booksOfAccount = null;
-//        for(int i = 0 ; i < accounts.size(); i++)
-//        {
-//            if(accounts.get(i) == null)
-//                throw new InvalidAccountException();
-//
-//            if(accounts.get(i).getUserName().equals(username))
-//            {
-//                booksOfAccount = accountOfBooks.get(i);
-//            }
-//
-//        }
-//        return booksOfAccount;
-//    }
 
     @Override
     public ArrayList<Book> getOrderHistoryCurrentUser() throws InvalidAccountException {

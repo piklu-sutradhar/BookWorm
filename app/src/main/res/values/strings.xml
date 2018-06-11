@@ -47,4 +47,5 @@
     <string name="purchase_history">Purchase History</string>
     <string name="temporary_checkout_confirmation">Temporary Checkout Confirmation</string>
     <string name="logout">logout</string>
+    <string name="book_not_found">Book not found</string>
 </resources>

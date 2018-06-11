@@ -31,7 +31,6 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
 
-        // TODO: add simple identity verification here, half done
         final Button loginBtn = (Button) findViewById(R.id.btn_login);
         loginBtn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
