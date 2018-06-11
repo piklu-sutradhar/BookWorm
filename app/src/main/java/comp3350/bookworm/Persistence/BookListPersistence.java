@@ -11,6 +11,5 @@ public interface BookListPersistence {
     Book getBook(String bookName);
     void deleteBook(String bookName);
     ArrayList<Book> getBookList();
-    ArrayList<Book> getBestSellerList();
     List<Book> getSimilarBooks(String text);
 }

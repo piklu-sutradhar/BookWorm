@@ -49,6 +49,13 @@ public class BookManager {
        return bookListStub.getBookList();
     }
 
+    public static ArrayList<Book> getBestSellerList(ArrayList<Book> baseList) {
+        ArrayList<Book> bestSellerList = baseList;
+        Collections.sort(bestSellerList);
+
+        return bestSellerList;
+    }
+
     public List<Book> searchSimilarBooks (String text){
         return (List<Book>)bookListStub.getSimilarBooks(text);
     }

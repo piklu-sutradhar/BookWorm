@@ -30,8 +30,7 @@ public class BookTest {
                 "Rating: " + 4.5 +
                 "Number of sell: " + 0 );
 
-        book = new Book( "A course in probability", "Neil A. Weiss",
-                "preview content", 110.66, 4.5, 0);
+        book = new Book( "A course in probability", "Neil A. Weiss", "preview content", "math", 110.66, 4.5, 0);
 
         assertNotNull( book );
 

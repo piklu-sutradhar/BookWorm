@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/haesookim/Documents/git/codeX/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v22/values-v22.xml",
+            "outputFile": "C:\\Users\\jeff.ARMAD\\Desktop\\Comp 3350\\codeXDevWork\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v22\\values-v22.xml",
             "map": [
                 {
-                    "source": "/Users/haesookim/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.4.0.aar/9965214b313ed13dbd0d971d63913282/res/values-v22/values-v22.xml",
+                    "source": "C:\\Users\\jeff.ARMAD\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.4.0.aar\\3d33b21f979fc8393311506c92cd8f15\\res\\values-v22\\values-v22.xml",
                     "from": {
                         "startLines": "2,3,4,9",
                         "startColumns": "4,4,4,4",

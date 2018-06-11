@@ -7,7 +7,7 @@ public class Book implements Comparable {
     private String category;
     private final double bookPrice;
     private double bookRating;
-    private int bookSoldNum;
+    private long bookSoldNum;
 
     public Book( String bookName, String authorName, String bookPreview, String category, double bookPrice ) {
         this.bookName = bookName;
@@ -18,13 +18,14 @@ public class Book implements Comparable {
         this.bookSoldNum = 0;
     }
 
-    public Book( String bookName, String authorName, String bookPreview, double bookPrice, double bookRating, int numSold) {
+    public Book( String bookName, String authorName, String bookPreview, String category, double bookPrice, double bookRating, long numSold) {
         this.bookName = bookName;
         this.authorName = authorName;
         this.bookPreview = bookPreview;
+        this.category = category;
         this.bookPrice = bookPrice;
-        this.bookSoldNum = numSold;
         this.bookRating = bookRating;
+        this.bookSoldNum = numSold;
     }
 
     public Book( String bookName, String authorName, String bookPreview, double bookPrice, double bookRating ) {
@@ -45,7 +46,7 @@ public class Book implements Comparable {
         return bookPreview;
     }
 
-    public int getBookSoldNum(){ return bookSoldNum;}
+    public long getBookSoldNum(){ return bookSoldNum;}
 
     public double getBookPrice() {
         return bookPrice;
@@ -66,8 +67,8 @@ public class Book implements Comparable {
 
     @Override
     public int compareTo(Object compareNumSold) {
-        int compareCopiesSold=((Book)compareNumSold).getBookSoldNum();
-        return compareCopiesSold - this.bookSoldNum;
+        long compareCopiesSold=((Book)compareNumSold).getBookSoldNum();
+        return (int)(compareCopiesSold - this.bookSoldNum);
     }
 
 }

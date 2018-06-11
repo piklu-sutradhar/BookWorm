@@ -21,6 +21,7 @@ import comp3350.bookworm.BusinessLogic.BookAdapter;
 import java.util.ArrayList;
 
 import comp3350.bookworm.Application.Service;
+import comp3350.bookworm.BusinessLogic.BookManager;
 import comp3350.bookworm.Objects.Book;
 import comp3350.bookworm.R;
 
@@ -99,7 +100,7 @@ public class HomePage extends AppCompatActivity {
 
 
         // Construct ArrayAdapter for best-seller
-        final BookArrayAdapter bestsellerBookArrayAdapter = new BookArrayAdapter(this, Service.getBookListStub().getBestSellerList());
+        final BookArrayAdapter bestsellerBookArrayAdapter = new BookArrayAdapter(this, BookManager.getBestSellerList(Service.getBookListStub().getBookList()));
         // TODO: change ArrayList to real data
         final BookArrayAdapter suggestionBookArrayAdapter = new BookArrayAdapter(this, new ArrayList<Book>());
         final ListView listView = (ListView) findViewById(R.id.bookList_homepage);

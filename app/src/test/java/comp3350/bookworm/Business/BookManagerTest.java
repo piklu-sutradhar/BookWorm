@@ -4,6 +4,8 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.ArrayList;
+
 import comp3350.bookworm.BusinessLogic.BookManager;
 import comp3350.bookworm.Objects.Book;
 import comp3350.bookworm.Objects.BookNotFoundException;
@@ -129,5 +131,46 @@ public class BookManagerTest {
         assertTrue(bookFound == null);
 
         System.out.println("Finishing test delete Book");
+    }
+
+    @Test
+    public void testBestSeller()
+    {
+        System.out.println("\nStarting test Best Seller list sort");
+        ArrayList<Book> bookList = new ArrayList<Book>();
+        ArrayList<Book> bestSellerList = new ArrayList<Book>();
+        long booksAdded = 0;
+
+        bookList.add(new Book("Franklin Goes to School", "Paulette Bourgeois", "Children's Book", "Childrens", 15.0, 5.0, 99));
+        booksAdded++;
+        bookList.add(new Book("Franklin Plays the Game", "Paulette Bourgeois", "Children's Book", "Childrens", 15.0, 5.0, 99));
+        booksAdded++;
+        bookList.add(new Book("Franklin's Bad Day", "Paulette Bourgeois", "Children's Book", "Childrens", 15.0, 5.0, -1));
+        booksAdded++;
+        bookList.add(new Book("Franklin Is Bossy", "Paulette Bourgeois", "Children's Book", "Childrens", 15.0, 5.0, 999999999));
+        booksAdded++;
+        bookList.add(new Book("Franklin Has a Sleepover", "Paulette Bourgeois", "Children's Book", "Childrens", 15.0, 5.0, 88));
+        booksAdded++;
+        bookList.add(new Book("Franklin Is Messy", "Paulette Bourgeois", "Children's Book", "Childrens", 15.0, 5.0, 3));
+        booksAdded++;
+        bookList.add(new Book("Franklin and the Tooth Fairy", "Paulette Bourgeois", "Children's Book", "Childrens", 15.0, 5.0, 2));
+        booksAdded++;
+        bookList.add(new Book("Franklin is Lost", "Paulette Bourgeois", "Children's Book", "Childrens", 15.0, 5.0, 1));
+        booksAdded++;
+
+        try{
+            bestSellerList = BookManager.getBestSellerList(bookList);
+        }
+        catch (Exception e)
+        {
+            fail("Failed not expected");
+        }
+
+        for(int i = 0; i < bookList.size()-1; i++) {
+            assertTrue(bestSellerList.get(i).getBookSoldNum() >= bestSellerList.get(i + 1).getBookSoldNum());
+        }
+        assertTrue(bestSellerList.size() == booksAdded);
+
+        System.out.println("Finishing test Best Seller list sort");
     }
 }
