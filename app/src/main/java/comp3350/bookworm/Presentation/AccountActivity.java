@@ -19,6 +19,8 @@ import comp3350.bookworm.Objects.Account;
 import comp3350.bookworm.Persistence.stubs.LoginUserPersistenceStub;
 import comp3350.bookworm.R;
 
+import static comp3350.bookworm.R.styleable.BottomNavigationView;
+
 public class AccountActivity extends AppCompatActivity {
     AccountManager accountManager = new AccountManager();
 

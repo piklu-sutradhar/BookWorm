@@ -1806,7 +1806,7 @@ public final class R {
      * <tr><td>barrier</td><td>2</td><td></td></tr>
      * <tr><td>chains</td><td>4</td><td></td></tr>
      * <tr><td>dimensions</td><td>8</td><td></td></tr>
-     * <tr><td>direct</td><td>1</td><td></td></tr>
+     * <tr><td>direct</td><td>1</td><td>for now only direct & barriers</td></tr>
      * <tr><td>none</td><td>0</td><td></td></tr>
      * <tr><td>standard</td><td>3</td><td></td></tr>
      * </table>
@@ -3388,20 +3388,20 @@ public final class R {
     public static final int btn_login=0x7f080031;
     public static final int btn_login_account_page=0x7f080032;
     public static final int btn_signup=0x7f080033;
-    public static final int button2=0x7f080034;
-    public static final int button3=0x7f080035;
-    public static final int button4=0x7f080036;
-    public static final int buttonPanel=0x7f080037;
-    public static final int cancel_action=0x7f080038;
-    public static final int center=0x7f080039;
-    public static final int center_horizontal=0x7f08003a;
-    public static final int center_vertical=0x7f08003b;
-    public static final int chains=0x7f08003c;
-    public static final int checkbox=0x7f08003d;
-    public static final int chronometer=0x7f08003e;
-    public static final int clip_horizontal=0x7f08003f;
-    public static final int clip_vertical=0x7f080040;
-    public static final int collapseActionView=0x7f080041;
+    public static final int button4=0x7f080034;
+    public static final int buttonPanel=0x7f080035;
+    public static final int cancel_action=0x7f080036;
+    public static final int cancel_btn=0x7f080037;
+    public static final int center=0x7f080038;
+    public static final int center_horizontal=0x7f080039;
+    public static final int center_vertical=0x7f08003a;
+    public static final int chains=0x7f08003b;
+    public static final int checkbox=0x7f08003c;
+    public static final int chronometer=0x7f08003d;
+    public static final int clip_horizontal=0x7f08003e;
+    public static final int clip_vertical=0x7f08003f;
+    public static final int collapseActionView=0x7f080040;
+    public static final int confirm_btn=0x7f080041;
     public static final int container=0x7f080042;
     public static final int contentPanel=0x7f080043;
     public static final int coordinator=0x7f080044;
@@ -8662,7 +8662,7 @@ public final class R {
      * <tr><td>barrier</td><td>2</td><td></td></tr>
      * <tr><td>chains</td><td>4</td><td></td></tr>
      * <tr><td>dimensions</td><td>8</td><td></td></tr>
-     * <tr><td>direct</td><td>1</td><td></td></tr>
+     * <tr><td>direct</td><td>1</td><td>for now only direct & barriers</td></tr>
      * <tr><td>none</td><td>0</td><td></td></tr>
      * <tr><td>standard</td><td>3</td><td></td></tr>
      * </table>
