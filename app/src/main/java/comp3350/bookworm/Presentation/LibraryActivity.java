@@ -10,15 +10,17 @@ import android.view.View;
 import android.widget.GridView;
 import android.widget.LinearLayout;
 
+import java.util.ArrayList;
+
 import comp3350.bookworm.Application.Service;
 import comp3350.bookworm.BusinessLogic.BookManager;
 import comp3350.bookworm.Objects.Account;
 import comp3350.bookworm.Objects.Book;
+import comp3350.bookworm.Objects.BookNotFoundException;
 import comp3350.bookworm.Objects.InvalidAccountException;
 import comp3350.bookworm.R;
 
 public class LibraryActivity extends AppCompatActivity {
-    private BookManager bookManager;
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -46,7 +48,7 @@ public class LibraryActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_library);
 
-        bookManager = new BookManager();
+        BookManager bookManager = new BookManager();
 
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.library_navigation);
         navigation.setSelectedItemId(R.id.navigation_library);
@@ -62,6 +64,11 @@ public class LibraryActivity extends AppCompatActivity {
         }
         catch (InvalidAccountException e) {
             visitorMode.setVisibility(View.VISIBLE);
+        }
+        catch (BookNotFoundException e) {
+            GridView gridView = (GridView) findViewById(R.id.library_gridView);
+            BookGripAdapter booksAdapter = new BookGripAdapter(this, new ArrayList<Book>());
+            gridView.setAdapter(booksAdapter);
         }
     }
 }

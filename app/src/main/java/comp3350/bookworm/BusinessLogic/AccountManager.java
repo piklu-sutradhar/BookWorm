@@ -1,24 +1,28 @@
 package comp3350.bookworm.BusinessLogic;
 
-import android.text.TextUtils;
-
 import comp3350.bookworm.Application.Service;
 import comp3350.bookworm.Objects.Account;
 import comp3350.bookworm.Objects.DuplicateUsernameException;
 import comp3350.bookworm.Objects.InvalidCredentialException;
 import comp3350.bookworm.Objects.InvalidEmailAddressException;
+import comp3350.bookworm.Persistence.AccountPersistence;
+import comp3350.bookworm.Persistence.LoginUserPersistence;
 
 public class AccountManager {
+    private final AccountPersistence accountPersistence;
+    private final LoginUserPersistence loginUserPersistence;
+
 
     public AccountManager() {
-
+        accountPersistence = Service.getAccountPersistence();
+        loginUserPersistence = Service.getLoginUserPersistence();
     }
 
     public void login (Account currentAccount) throws InvalidCredentialException {
-        Account account = Service.getAccountPersistenceStub().getAccountInfo(currentAccount);
+        Account account = accountPersistence.getAccountInfo(currentAccount);
         if(account == null)
             throw new InvalidCredentialException();
-        Service.getLoginUserPersistenceStub().setUsername(account.getUserName());
+        loginUserPersistence.setUsername(account.getUserName());
     }
 
     public void singup(Account currentAccount) throws DuplicateUsernameException, InvalidEmailAddressException {
@@ -27,7 +31,7 @@ public class AccountManager {
             if(!isValidEmailAddress(email))
                 throw new InvalidEmailAddressException();
 
-            Service.getAccountPersistenceStub().insertAccount(currentAccount);
+            accountPersistence.insertAccount(currentAccount);
         }
         catch (DuplicateUsernameException e) {
             throw new DuplicateUsernameException();
@@ -35,15 +39,15 @@ public class AccountManager {
     }
 
     public Boolean anyLoggedInUser() {
-        return Service.getLoginUserPersistenceStub().loggedIn();
+        return loginUserPersistence.loggedIn();
     }
 
     public String getLoggedInUsername() {
-        return Service.getLoginUserPersistenceStub().getUsername();
+        return loginUserPersistence.getUsername();
     }
 
     public void logout() {
-        Service.getLoginUserPersistenceStub().logout();
+        loginUserPersistence.logout();
     }
 
     public boolean isValidEmailAddress(String email) {

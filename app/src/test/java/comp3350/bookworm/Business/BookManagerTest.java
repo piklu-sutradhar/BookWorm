@@ -12,9 +12,11 @@ import comp3350.bookworm.Objects.Account;
 import comp3350.bookworm.Objects.Book;
 import comp3350.bookworm.Objects.BookNotFoundException;
 import comp3350.bookworm.Objects.DuplicateBookException;
+import comp3350.bookworm.Objects.DuplicateUsernameException;
 import comp3350.bookworm.Objects.InvalidAccountException;
 import comp3350.bookworm.Objects.InvalidBookException;
 import comp3350.bookworm.Objects.InvalidCredentialException;
+import comp3350.bookworm.Objects.InvalidEmailAddressException;
 
 import static junit.framework.Assert.assertFalse;
 import static junit.framework.Assert.assertNotNull;
@@ -51,26 +53,26 @@ public class BookManagerTest {
 
     @Test
     public void testValidSearchBook() {
-        System.out.println("\nStarting test valid SearchBook");
+        System.out.println("\nStarting test valid searchBook");
         Book bookToTest = null;
         try {
-            bookToTest = bookManager.SearchBook("Java");
+            bookToTest = bookManager.searchBook("Java");
         }
         catch (BookNotFoundException e) {
             fail("Exception not expected");
         }
          assertTrue(bookToTest.getBookName().equals("Java"));
 
-        System.out.println("Finishing test valid SearchBook");
+        System.out.println("Finishing test valid searchBook");
     }
 
     @Test
     public void testInvalidSearchBook() {
-        System.out.println("\nStarting test invalid SearchBook");
+        System.out.println("\nStarting test invalid searchBook");
         Book bookToTest = null;
 
         try {
-            bookToTest = bookManager.SearchBook("");
+            bookToTest = bookManager.searchBook("");
             fail("Failed expected");
         }
         catch (BookNotFoundException e) {
@@ -78,7 +80,7 @@ public class BookManagerTest {
         }
         assertTrue(bookToTest == null);
 
-        System.out.println("Finishing test invalid SearchBook");
+        System.out.println("Finishing test invalid searchBook");
     }
     @Test
     public void testValidAddBook()
@@ -87,7 +89,7 @@ public class BookManagerTest {
         Book bookToAdd = new Book("Bengali", "Shamoresh","Bangali book", "10.0",5.0, 5, 0);
 
         try {
-            bookManager.AddBook(bookToAdd);
+            bookManager.addBook(bookToAdd);
         }
         catch (DuplicateBookException e) {
             fail("Exception not expected");
@@ -99,9 +101,9 @@ public class BookManagerTest {
         Book bookFound = null;
 
         try{
-            bookFound = bookManager.SearchBook("Bengali");
+            bookFound = bookManager.searchBook("Bengali");
             assertTrue(bookFound.getBookName().equals("Bengali"));
-            bookManager.DeleteBook("Bengali");
+            bookManager.deleteBook("Bengali");
         }
         catch (BookNotFoundException e)
         {
@@ -118,7 +120,7 @@ public class BookManagerTest {
         Book bookToAdd = new Book("", "Shamoresh","Bangali book", "10.0",5.0, 5, 0);
 
         try {
-            bookManager.AddBook(bookToAdd);
+            bookManager.addBook(bookToAdd);
             fail("Failed expected");
         }
         catch (DuplicateBookException e) {
@@ -131,7 +133,7 @@ public class BookManagerTest {
         Book bookFound = null;
 
         try{
-            bookFound = bookManager.SearchBook("");
+            bookFound = bookManager.searchBook("");
             fail("Failed expected");
         }
         catch (BookNotFoundException e) {
@@ -149,7 +151,7 @@ public class BookManagerTest {
         Book bookToAdd = new Book("duplicate book", "Shamoresh","Bangali book", "10.0",5.0, 5, 0);
 
         try {
-            bookManager.AddBook(bookToAdd);
+            bookManager.addBook(bookToAdd);
         }
         catch (DuplicateBookException e) {
             fail("Exception not expected");
@@ -159,7 +161,7 @@ public class BookManagerTest {
         }
 
         try {
-            bookManager.AddBook(bookToAdd);
+            bookManager.addBook(bookToAdd);
             fail("Failed expected");
         }
         catch (DuplicateBookException e) {
@@ -179,7 +181,7 @@ public class BookManagerTest {
         Book bookToAdd = new Book("Game of thrones", "Shamoresh","Bangali book", "10.0",5.0, 5, 0);
 
         try {
-            bookManager.AddBook(bookToAdd);
+            bookManager.addBook(bookToAdd);
         }
         catch (DuplicateBookException e) {
             fail("Exception not expected");
@@ -191,8 +193,8 @@ public class BookManagerTest {
         Book bookFound = null;
 
         try{
-            bookManager.DeleteBook("Game of thrones");
-            bookFound = bookManager.SearchBook("Game of thrones");
+            bookManager.deleteBook("Game of thrones");
+            bookFound = bookManager.searchBook("Game of thrones");
             fail("Failed expected");
         }
         catch (BookNotFoundException e) {
@@ -246,8 +248,8 @@ public class BookManagerTest {
     }
 
     @Test
-    public void testInvalidGetOrderHistory() {
-        System.out.println("\nStarting test invalid get order history");
+    public void testInvalidGetOrderHistoryNoLogin() {
+        System.out.println("\nStarting test invalid get order history no login");
 
         ArrayList<Book> booklist = null;
         accountManager.logout();
@@ -259,8 +261,47 @@ public class BookManagerTest {
         catch (InvalidAccountException e) {
 
         }
+        catch (BookNotFoundException e) {
+            fail("Exception not expected");
+        }
         assertNull(booklist);
-        System.out.println("\nFinishing test invalid get order history");
+        System.out.println("\nFinishing test invalid get order history no login");
+    }
+
+    @Test
+    public void testGetOrderHistoryNoHistory() {
+        System.out.println("\nStarting test get order history when there is no history");
+
+        ArrayList<Book> booklist = null;
+        String username = "new account";
+        String password = "new password";
+        String email = "new@bookworm.ca";
+        Account newAccount = new Account(username, password, email);
+
+        try {
+            accountManager.singup(newAccount);
+            accountManager.login(newAccount);
+            booklist = bookManager.getOrderHistoryForCurrentUser();
+            fail("Fail expected");
+        }
+        catch (InvalidAccountException e) {
+            fail("Exception not expected");
+        }
+        catch (DuplicateUsernameException e){
+            fail("Exception not expected");
+        }
+        catch (InvalidCredentialException e) {
+            fail("Exception not expected");
+        }
+        catch (InvalidEmailAddressException e) {
+            fail("Exception not expected");
+        }
+        catch (BookNotFoundException e) {
+
+        }
+        assertNull(booklist);
+        accountManager.logout();
+        System.out.println("\nFinishing test get order history when this is no history");
     }
 
     @Test
@@ -279,6 +320,9 @@ public class BookManagerTest {
             fail("Exception not expected");
         }
         catch (InvalidAccountException e) {
+            fail("Exception not expected");
+        }
+        catch (BookNotFoundException e) {
             fail("Exception not expected");
         }
         assertNotNull(booklist);

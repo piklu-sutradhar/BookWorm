@@ -10,6 +10,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import comp3350.bookworm.Application.Service;
+import comp3350.bookworm.BusinessLogic.BookManager;
 import comp3350.bookworm.Objects.Book;
 import comp3350.bookworm.Objects.BookNotFoundException;
 import comp3350.bookworm.R;
@@ -22,12 +23,14 @@ public class DescriptionActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_description);
 
+        BookManager bookManager = new BookManager();
+
         try {
             Bundle extras = getIntent().getExtras();
             String bookName = "";
             if(extras != null)
                 bookName = extras.getString("BookName", "C++");
-            Book book = Service.getBookListStub().getBook(bookName);
+            Book book = bookManager.searchBook(bookName);
 
             final TextView textView_title = (TextView) findViewById( R.id.textView_title );
             textView_title.setText(book.getBookName());

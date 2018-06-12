@@ -68,6 +68,7 @@ public class AccountActivity extends AppCompatActivity {
         loginBtn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 startActivity(new Intent(AccountActivity.this, LoginActivity.class));
+                finish();
             }
         });
 
@@ -77,6 +78,7 @@ public class AccountActivity extends AppCompatActivity {
 
                 accountManager.logout();
                 startActivity(new Intent(AccountActivity.this, HomePage.class));
+                finish();
             }
         });
 
