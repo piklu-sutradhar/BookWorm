@@ -21,6 +21,8 @@ import comp3350.bookworm.Objects.Book;
 import comp3350.bookworm.R;
 
 public class HomePage extends AppCompatActivity {
+
+    private BookManager bookManager;
     
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -46,14 +48,16 @@ public class HomePage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
 
+        bookManager = new BookManager();
+
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.home_page_navigation);
         navigation.setSelectedItemId(R.id.navigation_discover);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
 
         // Construct ArrayAdapter for best-seller
-        final BookArrayAdapter bestsellerBookArrayAdapter = new BookArrayAdapter(this, BookManager.getBestSellerList(Service.getBookListStub().getBookList()));
-        final BookArrayAdapter suggestionBookArrayAdapter = new BookArrayAdapter(this, new ArrayList<Book>());
+        final BookArrayAdapter bestsellerBookArrayAdapter = new BookArrayAdapter(this, BookManager.getBestSellerList(bookManager.getBookList()));
+        final BookArrayAdapter suggestionBookArrayAdapter = new BookArrayAdapter(this, BookManager.getBestSellerList(bookManager.getBookList()));
         final ListView listView = (ListView) findViewById(R.id.bookList_homepage);
         listView.setAdapter(bestsellerBookArrayAdapter);
 
