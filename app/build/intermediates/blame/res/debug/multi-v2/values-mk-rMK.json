@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\jeff.ARMAD\\Desktop\\Comp 3350\\codeXDevWork\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-mk-rMK\\values-mk-rMK.xml",
+            "outputFile": "C:\\Users\\User\\OneDrive\\proj\\softeng1\\codeX\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-mk-rMK\\values-mk-rMK.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\jeff.ARMAD\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.4.0.aar\\3d33b21f979fc8393311506c92cd8f15\\res\\values-mk-rMK\\values-mk-rMK.xml",
+                    "source": "C:\\Users\\User\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.4.0.aar\\5e9863886fdc662fe620d3fda4ad120b\\res\\values-mk-rMK\\values-mk-rMK.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
