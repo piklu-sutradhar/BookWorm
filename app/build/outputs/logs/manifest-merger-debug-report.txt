@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml:2:1-33:12
-INJECTED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml:2:1-33:12
-INJECTED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml:2:1-33:12
-INJECTED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml:2:1-33:12
+ADDED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml:2:1-28:12
 MERGED from [com.android.support:design:25.4.0] /Users/liminghao/.gradle/caches/transforms-1/files-1.1/design-25.4.0.aar/c138007cbf608fc7c3f91fd55875b858/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:appcompat-v7:25.4.0] /Users/liminghao/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.4.0.aar/880509bf405d7bcf2acf937cb8e48865/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /Users/liminghao/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/f7900cca0926fde6243cb317469c95c0/AndroidManifest.xml:2:1-11:12
@@ -17,25 +17,25 @@ MERGED from [com.android.support:support-media-compat:25.4.0] /Users/liminghao/.
 MERGED from [com.android.support:support-core-utils:25.4.0] /Users/liminghao/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.4.0.aar/53a65fea0bf13b2fa6823544d646bb26/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-core-ui:25.4.0] /Users/liminghao/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.4.0.aar/ac7af2e9c941240b8ed0cdda8b94df3c/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-compat:25.4.0] /Users/liminghao/.gradle/caches/transforms-1/files-1.1/support-compat-25.4.0.aar/640a06c8d47ed791479ad6b2285499db/AndroidManifest.xml:17:1-31:12
-INJECTED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml:2:1-33:12
-INJECTED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml:2:1-33:12
-INJECTED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml:2:1-33:12
+INJECTED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml:2:1-28:12
 	package
 		ADDED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml:3:5-32
 		INJECTED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml
-		ADDED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml:2:1-33:12
+		ADDED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml:2:1-28:12
 		INJECTED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml
-		ADDED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml:2:1-33:12
+		ADDED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml:2:1-28:12
 		INJECTED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml:2:11-69
 application
-ADDED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml:5:5-31:19
+ADDED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml:5:5-26:19
 MERGED from [com.android.support:design:25.4.0] /Users/liminghao/.gradle/caches/transforms-1/files-1.1/design-25.4.0.aar/c138007cbf608fc7c3f91fd55875b858/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:design:25.4.0] /Users/liminghao/.gradle/caches/transforms-1/files-1.1/design-25.4.0.aar/c138007cbf608fc7c3f91fd55875b858/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:appcompat-v7:25.4.0] /Users/liminghao/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.4.0.aar/880509bf405d7bcf2acf937cb8e48865/AndroidManifest.xml:25:5-29:19
@@ -75,7 +75,7 @@ MERGED from [com.android.support:support-compat:25.4.0] /Users/liminghao/.gradle
 	android:theme
 		ADDED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml:11:9-40
 activity#comp3350.bookworm.Presentation.HomePage
-ADDED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml:12:9-22:20
+ADDED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml:12:9-18:20
 	android:name
 		ADDED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml:12:19-56
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
@@ -88,44 +88,34 @@ category#android.intent.category.LAUNCHER
 ADDED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml:16:17-77
 	android:name
 		ADDED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml:16:27-74
-meta-data#android.app.searchable
-ADDED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml:18:13-21:25
-	android:resource
-		ADDED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml:20:17-51
-	android:name
-		ADDED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml:19:17-54
 activity#comp3350.bookworm.Presentation.LoginActivity
-ADDED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml:23:9-64
+ADDED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml:19:9-64
 	android:name
-		ADDED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml:23:19-61
+		ADDED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml:19:19-61
 activity#comp3350.bookworm.Presentation.SignupActivity
-ADDED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml:24:9-65
+ADDED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml:20:9-65
 	android:name
-		ADDED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml:24:19-62
+		ADDED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml:20:19-62
 activity#comp3350.bookworm.Presentation.AccountActivity
-ADDED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml:25:9-66
+ADDED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml:21:9-66
+	android:name
+		ADDED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml:21:19-63
+activity#comp3350.bookworm.Presentation.DescriptionActivity
+ADDED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml:22:9-70
+	android:name
+		ADDED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml:22:19-67
+activity#comp3350.bookworm.Presentation.OrderHistoryActivity
+ADDED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml:23:9-71
+	android:name
+		ADDED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml:23:19-68
+activity#comp3350.bookworm.Presentation.PlaceOrderActivity
+ADDED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml:24:9-68
+	android:name
+		ADDED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml:24:19-66
+activity#comp3350.bookworm.Presentation.LibraryActivity
+ADDED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml:25:9-75
 	android:name
 		ADDED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml:25:19-63
-activity#comp3350.bookworm.Presentation.DescriptionActivity
-ADDED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml:26:9-70
-	android:name
-		ADDED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml:26:19-67
-activity#comp3350.bookworm.Presentation.BookPreviewActivity
-ADDED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml:27:9-79
-	android:name
-		ADDED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml:27:19-67
-activity#comp3350.bookworm.Presentation.OrderHistoryActivity
-ADDED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml:28:9-71
-	android:name
-		ADDED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml:28:19-68
-activity#comp3350.bookworm.Presentation.PlaceOrderActivity
-ADDED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml:29:9-68
-	android:name
-		ADDED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml:29:19-66
-activity#comp3350.bookworm.Presentation.LibraryActivity
-ADDED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml:30:9-75
-	android:name
-		ADDED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml:30:19-63
 uses-sdk
 INJECTED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/liminghao/Developer/Bookworm/app/src/main/AndroidManifest.xml

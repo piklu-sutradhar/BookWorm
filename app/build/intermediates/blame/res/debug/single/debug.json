@@ -408,10 +408,6 @@
         "source": "/Users/liminghao/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.4.0.aar/880509bf405d7bcf2acf937cb8e48865/res/drawable-xhdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png"
     },
     {
-        "merged": "/Users/liminghao/Developer/Bookworm/app/build/intermediates/res/merged/debug/layout_activity_book_preview.xml.flat",
-        "source": "/Users/liminghao/Developer/Bookworm/app/src/main/res/layout/activity_book_preview.xml"
-    },
-    {
         "merged": "/Users/liminghao/Developer/Bookworm/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
         "source": "/Users/liminghao/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.4.0.aar/880509bf405d7bcf2acf937cb8e48865/res/drawable-xhdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png"
     },
@@ -616,12 +612,12 @@
         "source": "/Users/liminghao/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.4.0.aar/880509bf405d7bcf2acf937cb8e48865/res/drawable-xhdpi-v4/abc_textfield_default_mtrl_alpha.9.png"
     },
     {
-        "merged": "/Users/liminghao/Developer/Bookworm/app/build/intermediates/res/merged/debug/drawable_notification_bg.xml.flat",
-        "source": "/Users/liminghao/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.4.0.aar/880509bf405d7bcf2acf937cb8e48865/res/drawable/notification_bg.xml"
-    },
-    {
         "merged": "/Users/liminghao/Developer/Bookworm/app/build/intermediates/res/merged/debug/drawable-v21_design_bottom_navigation_item_background.xml.flat",
         "source": "/Users/liminghao/.gradle/caches/transforms-1/files-1.1/design-25.4.0.aar/c138007cbf608fc7c3f91fd55875b858/res/drawable-v21/design_bottom_navigation_item_background.xml"
+    },
+    {
+        "merged": "/Users/liminghao/Developer/Bookworm/app/build/intermediates/res/merged/debug/drawable_notification_bg.xml.flat",
+        "source": "/Users/liminghao/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.4.0.aar/880509bf405d7bcf2acf937cb8e48865/res/drawable/notification_bg.xml"
     },
     {
         "merged": "/Users/liminghao/Developer/Bookworm/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
@@ -634,10 +630,6 @@
     {
         "merged": "/Users/liminghao/Developer/Bookworm/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
         "source": "/Users/liminghao/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.4.0.aar/880509bf405d7bcf2acf937cb8e48865/res/drawable-xxhdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "/Users/liminghao/Developer/Bookworm/app/build/intermediates/res/merged/debug/layout_activity_searchlist.xml.flat",
-        "source": "/Users/liminghao/Developer/Bookworm/app/src/main/res/layout/activity_searchlist.xml"
     },
     {
         "merged": "/Users/liminghao/Developer/Bookworm/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
@@ -1442,10 +1434,6 @@
     {
         "merged": "/Users/liminghao/Developer/Bookworm/app/build/intermediates/res/merged/debug/layout_abc_alert_dialog_title_material.xml.flat",
         "source": "/Users/liminghao/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.4.0.aar/880509bf405d7bcf2acf937cb8e48865/res/layout/abc_alert_dialog_title_material.xml"
-    },
-    {
-        "merged": "/Users/liminghao/Developer/Bookworm/app/build/intermediates/res/merged/debug/xml_searchable.xml.flat",
-        "source": "/Users/liminghao/Developer/Bookworm/app/src/main/res/xml/searchable.xml"
     },
     {
         "merged": "/Users/liminghao/Developer/Bookworm/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",

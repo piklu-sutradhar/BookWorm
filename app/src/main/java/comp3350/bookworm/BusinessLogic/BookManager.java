@@ -46,8 +46,4 @@ public class BookManager {
         return Service.getOrderHistoryStub().getOrderHistoryCurrentUser();
     }
 
-    // TODO: for searching function
-//    public List<Book> searchSimilarBooks (String text){
-//        return (List<Book>)bookListStub.getSimilarBooks(text);
-//    }
 }

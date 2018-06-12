@@ -56,10 +56,6 @@ public class DescriptionActivity extends AppCompatActivity {
 
                     btn_check_cart.setOnClickListener( new View.OnClickListener() {
                         public void onClick( View v ) {
-                            // TODO: not implemented yet
-//                        Intent intentCart = new Intent( DescriptionActivity.this, Cart.class );
-//                        startActivity( intentCart );
-
                             Toast.makeText( DescriptionActivity.this,
                                     R.string.not_implemented_msg,
                                     Toast.LENGTH_SHORT ).show();
@@ -71,16 +67,6 @@ public class DescriptionActivity extends AppCompatActivity {
                     dialog.show();
                 }
             });
-
-            // TODO: not implemented yet
-//        final Button buttonPreview = (Button) findViewById( R.id.buttonPreview );
-//        buttonPreview.setOnClickListener( new View.OnClickListener() {
-//            public void onClick( View v ) {
-//                Intent intentPreview = new Intent( DescriptionActivity.this, BookPreviewActivity.class);
-//                intentPreview.putExtra( "PREVIEW_CONTENT", whichBook.getPreview() );
-//                startActivity( intentPreview );
-//            }
-//        });
 
         }
         catch (BookNotFoundException e) {

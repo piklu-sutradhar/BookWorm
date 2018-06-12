@@ -8,35 +8,11 @@
     tools:context=".Presentation.HomePage"
     android:orientation="vertical">
 
-    <SearchView
-        android:id="@+id/Search_bar"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="50dp"
-        android:layout_marginTop="16dp"
-        android:orientation="horizontal"
-        android:focusable="false"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:queryHint="Search for books"
-        android:iconifiedByDefault="false"/>
-
-    <Spinner xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/discover_spinner"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_margin="16dp"
-         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"/>
-
     <ListView
         android:id="@+id/bookList_homepage"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignBottom="@+id/home_page_navigation"
-        android:layout_alignTop="@+id/Search_bar"
         android:layout_marginBottom="50dp"
         android:layout_marginTop="44dp">
 
