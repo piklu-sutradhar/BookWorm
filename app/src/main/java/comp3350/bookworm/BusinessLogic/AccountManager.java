@@ -18,13 +18,13 @@ public class AccountManager {
         Account account = Service.getAccountPersistenceStub().getAccountInfo(currentAccount);
         if(account == null)
             throw new InvalidCredentialException();
-        addLoggedInUser(account.getUserName());
+        Service.getLoginUserPersistenceStub().setUsername(account.getUserName());
     }
 
     public void singup(Account currentAccount) throws DuplicateUsernameException, InvalidEmailAddressException {
         try {
             String email = currentAccount.getEmail();
-            if(TextUtils.isEmpty(email) || !android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches())
+            if(!isValidEmailAddress(email))
                 throw new InvalidEmailAddressException();
 
             Service.getAccountPersistenceStub().insertAccount(currentAccount);
@@ -32,10 +32,6 @@ public class AccountManager {
         catch (DuplicateUsernameException e) {
             throw new DuplicateUsernameException();
         }
-    }
-
-    private void addLoggedInUser(String username) {
-        Service.getLoginUserPersistenceStub().setUsername(username);
     }
 
     public Boolean anyLoggedInUser() {
@@ -50,5 +46,11 @@ public class AccountManager {
         Service.getLoginUserPersistenceStub().logout();
     }
 
+    public boolean isValidEmailAddress(String email) {
+        String ePattern = "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$";
+        java.util.regex.Pattern p = java.util.regex.Pattern.compile(ePattern);
+        java.util.regex.Matcher m = p.matcher(email);
+        return m.matches();
+    }
 
 }

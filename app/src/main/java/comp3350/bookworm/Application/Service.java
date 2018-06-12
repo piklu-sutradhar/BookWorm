@@ -3,16 +3,12 @@ package comp3350.bookworm.Application;
 import comp3350.bookworm.Persistence.stubs.AccountPersistenceStub;
 import comp3350.bookworm.Persistence.stubs.BookListStub;
 import comp3350.bookworm.Persistence.stubs.LoginUserPersistenceStub;
-import comp3350.bookworm.Persistence.stubs.BookListStub;
-import comp3350.bookworm.Persistence.stubs.LoginUserPersistenceStub;
 import comp3350.bookworm.Persistence.stubs.OrderHistoryPersistenceStub;
 
 public class Service {
     private static AccountPersistenceStub accountPersistenceStub = null;
     private static BookListStub bookListStub = null;
-
     private static LoginUserPersistenceStub loginUserPersistenceStub = null;
-
     private static OrderHistoryPersistenceStub orderHistoryStub = null;
 
 
@@ -21,9 +17,9 @@ public class Service {
         if (accountPersistenceStub == null) {
             accountPersistenceStub = new AccountPersistenceStub();
         }
-
         return accountPersistenceStub;
     }
+
     public static synchronized BookListStub getBookListStub()
     {
         if(bookListStub == null) {
@@ -31,7 +27,6 @@ public class Service {
         }
         return bookListStub;
     }
-
 
     public static synchronized OrderHistoryPersistenceStub getOrderHistoryStub()
     {
@@ -46,7 +41,6 @@ public class Service {
         if(loginUserPersistenceStub == null) {
             loginUserPersistenceStub = new LoginUserPersistenceStub();
         }
-
         return loginUserPersistenceStub;
     }
 

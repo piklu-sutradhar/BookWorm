@@ -38,4 +38,24 @@ public class AccountTest {
         System.out.println("Finished testAccount2");
     }
 
+    @Test
+    public void testAccountEquals() {
+        System.out.println("\nStarting testAccountEquals");
+
+
+        String username1 = "u1";
+        String username2 = "u2";
+        String password1 = "p1";
+        String password2 = "p2";
+
+        Account a1 = new Account(username1, password1);
+        Account a2 = new Account(username2, password2);
+
+        assertTrue(a1.equals(a1));
+        assertFalse(a1.equals(a2));
+
+        System.out.println("\nFinishing testAccountEquals");
+
+    }
+
 }

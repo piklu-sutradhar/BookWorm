@@ -8,17 +8,8 @@ import static org.junit.Assert.*;
 
 public class BookTest {
 
-//    @Test void testCreatingBook1() {
-//
-//    }
-//
-//    @Test
-//    public void testCreatingBook2() {
-//
-//    }
-
     @Test
-    public void testCreatingBook3() {
+    public void testCreatingBook() {
         Book book;
 
         System.out.println( "\nStarting test for creating a Book object.\n" );
@@ -45,13 +36,19 @@ public class BookTest {
 
     }
 
-//    @Before
-//    public void setUp() {
-//
-//    }
-//
-//    @After
-//    public void tearDown() {
-//
-//    }
+    @Test
+    public void testBookCompare() {
+        System.out.println( "\nStarting test Book compare.\n" );
+        Book book1, book2;
+
+        book1 = new Book( "A course in probability", "Neil A. Weiss", "preview content", "math", 110.66, 4.5, 0);
+        book2 = new Book( "A course in probability", "Neil A. Weiss", "preview content", "math", 110.66, 4.5, 5);
+
+        assertEquals(book1.compareTo(book1), 0);
+        assertEquals(book1.compareTo(book2), 5);
+
+        System.out.println( "\nFinished test Book compare." );
+
+    }
+
 }
