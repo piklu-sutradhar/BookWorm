@@ -25,7 +25,6 @@ public class SignupActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
 
-        // TODO: add simple identity verification here
         final Button loginBtn = (Button) findViewById(R.id.btn_signup);
         loginBtn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {

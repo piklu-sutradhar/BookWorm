@@ -55,7 +55,6 @@ public class BookGripAdapter extends BaseAdapter {
         final TextView nameTextView = (TextView)convertView.findViewById(R.id.grid_book_name);
         final TextView authorTextView = (TextView)convertView.findViewById(R.id.grid_book_author);
 
-        // TODO: replace image with real book cover
         imageView.setImageResource(R.drawable.default_book_icon);
         nameTextView.setText(book.getBookName());
         authorTextView.setText(book.getAuthorName());
