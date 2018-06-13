@@ -1,1 +1,1 @@
-![ARCHITECTURE](https://code.cs.umanitoba.ca/comp3350-summer2018/codeX/blob/master/3_tier_arch.png)
+![ARCHITECTURE](3_tier_arch.png)
