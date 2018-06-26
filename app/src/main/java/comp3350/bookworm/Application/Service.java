@@ -1,47 +1,51 @@
 package comp3350.bookworm.Application;
 
+import comp3350.bookworm.Persistence.AccountPersistence;
+import comp3350.bookworm.Persistence.BookListPersistence;
+import comp3350.bookworm.Persistence.LoginUserPersistence;
+import comp3350.bookworm.Persistence.OrderHistoryPersistence;
 import comp3350.bookworm.Persistence.stubs.AccountPersistenceStub;
-import comp3350.bookworm.Persistence.stubs.BookListStub;
+import comp3350.bookworm.Persistence.stubs.BookListPersistenceStub;
 import comp3350.bookworm.Persistence.stubs.LoginUserPersistenceStub;
 import comp3350.bookworm.Persistence.stubs.OrderHistoryPersistenceStub;
 
 public class Service {
-    private static AccountPersistenceStub accountPersistenceStub = null;
-    private static BookListStub bookListStub = null;
-    private static LoginUserPersistenceStub loginUserPersistenceStub = null;
-    private static OrderHistoryPersistenceStub orderHistoryStub = null;
+    private static AccountPersistence accountPersistence = null;
+    private static BookListPersistence bookListPersistence = null;
+    private static LoginUserPersistence loginUserPersistence = null;
+    private static OrderHistoryPersistence orderHistory = null;
 
 
-    public static synchronized AccountPersistenceStub getAccountPersistenceStub()
+    public static synchronized AccountPersistence getAccountPersistence()
     {
-        if (accountPersistenceStub == null) {
-            accountPersistenceStub = new AccountPersistenceStub();
+        if (accountPersistence == null) {
+            accountPersistence = new AccountPersistenceStub();
         }
-        return accountPersistenceStub;
+        return accountPersistence;
     }
 
-    public static synchronized BookListStub getBookListStub()
+    public static synchronized BookListPersistence getBookListPersistence()
     {
-        if(bookListStub == null) {
-            bookListStub = new BookListStub();
+        if(bookListPersistence == null) {
+            bookListPersistence = new BookListPersistenceStub();
         }
-        return bookListStub;
+        return bookListPersistence;
     }
 
-    public static synchronized OrderHistoryPersistenceStub getOrderHistoryStub()
+    public static synchronized OrderHistoryPersistence getOrderHistoryPersistence()
     {
-        if(orderHistoryStub == null)
+        if(orderHistory == null)
         {
-            orderHistoryStub = new OrderHistoryPersistenceStub();
+            orderHistory = new OrderHistoryPersistenceStub();
         }
-        return orderHistoryStub;
+        return orderHistory;
     }
 
-    public static synchronized LoginUserPersistenceStub getLoginUserPersistenceStub() {
-        if(loginUserPersistenceStub == null) {
-            loginUserPersistenceStub = new LoginUserPersistenceStub();
+    public static synchronized LoginUserPersistence getLoginUserPersistence() {
+        if(loginUserPersistence == null) {
+            loginUserPersistence = new LoginUserPersistenceStub();
         }
-        return loginUserPersistenceStub;
+        return loginUserPersistence;
     }
 
 }

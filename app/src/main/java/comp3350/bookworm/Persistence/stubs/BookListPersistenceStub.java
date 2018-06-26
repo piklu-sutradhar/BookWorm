@@ -9,10 +9,10 @@ import comp3350.bookworm.Objects.DuplicateBookException;
 import comp3350.bookworm.Objects.InvalidBookException;
 import comp3350.bookworm.Persistence.BookListPersistence;
 
-public class BookListStub implements BookListPersistence {
+public class BookListPersistenceStub implements BookListPersistence {
     private ArrayList<Book> bookList;
 
-    public BookListStub()
+    public BookListPersistenceStub()
     {
         this.bookList = new ArrayList<>();
 
@@ -87,7 +87,7 @@ public class BookListStub implements BookListPersistence {
             {
                 if(current.getBookName().contains(text.substring(i,1)))
                 {
-                  letterMatched++;
+                    letterMatched++;
                 }
             }
             if(letterMatched == text.length())

@@ -9,6 +9,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import comp3350.bookworm.Application.Service;
+import comp3350.bookworm.BusinessLogic.AccountManager;
 import comp3350.bookworm.R;
 
 public class PlaceOrderActivity extends AppCompatActivity {
@@ -21,8 +22,10 @@ public class PlaceOrderActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_place_order);
 
+        AccountManager accountManager = new AccountManager();
+
         // Display the current signed in user
-        String loggedInUser = Service.getLoginUserPersistenceStub().getUsername().toUpperCase();
+        String loggedInUser = accountManager.getLoggedInUsername().toUpperCase();
         TextView deliveringToText = (TextView)findViewById(R.id.current_user);
         deliveringToText.setText("Delivering To: "+ loggedInUser);
 
@@ -67,6 +70,7 @@ public class PlaceOrderActivity extends AppCompatActivity {
             public void onClick( View v ) {
                 Intent intentBackToHome = new Intent( PlaceOrderActivity.this, AccountActivity.class );
                 startActivity( intentBackToHome );
+                finish();
             }
         });
 

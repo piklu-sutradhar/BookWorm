@@ -3,6 +3,7 @@ package comp3350.bookworm.Persistence.stubs;
 import java.util.ArrayList;
 
 import comp3350.bookworm.Application.Service;
+import comp3350.bookworm.Objects.BookNotFoundException;
 import comp3350.bookworm.Objects.InvalidAccountException;
 import comp3350.bookworm.Objects.Account;
 import comp3350.bookworm.Objects.Book;
@@ -14,7 +15,7 @@ public class OrderHistoryPersistenceStub implements OrderHistoryPersistence {
     private ArrayList<ArrayList<Book>> accountOfBooks;
 
     public OrderHistoryPersistenceStub() {
-        accounts = Service.getAccountPersistenceStub().getAllAccounts();
+        accounts = Service.getAccountPersistence().getAllAccounts();
         accountOfBooks = new ArrayList<>();
         ArrayList<Book> bookList = new ArrayList<>();
 
@@ -22,6 +23,10 @@ public class OrderHistoryPersistenceStub implements OrderHistoryPersistence {
         bookList.add(new Book("How to Fix an ID10T error Vol 2", "Daniel J. Fung", "Programming book", "Programming", 10.0, 5.0, 9));
         bookList.add(new Book("How to Fix an ID10T error Vol 1", "Daniel J. Fung", "Programming book", "Programming", 10.0, 5.0, 10));
         bookList.add(new Book("Harry Potter and the Evil Potato", "Daniel J. Fung", "Fantasy book", "Fantasy", 10.0, 5.0, 11));
+        bookList.add(new Book("C++", "Daniel J. Fung", "Programming book", "Programming", 10.0, 5.0, 1));
+        bookList.add(new Book("Java", "Daniel J. Fung", "Programming book", "Programming", 10.0, 5.0, 2));
+        bookList.add(new Book("C#", "Daniel J. Fung", "Programming book", "Programming", 10.0, 5.0, 3));
+        bookList.add(new Book("C++ : The Return of the C++ King", "Daniel J. Fung", "Programming book", "Programming", 10.0, 5.0, 4));
 
         for(int i = 0; i < accounts.size(); i++ )
         {
@@ -30,21 +35,24 @@ public class OrderHistoryPersistenceStub implements OrderHistoryPersistence {
     }
 
     @Override
-    public ArrayList<Book> getOrderHistoryCurrentUser() throws InvalidAccountException {
+    public ArrayList<Book> getOrderHistoryCurrentUser() throws InvalidAccountException, BookNotFoundException {
         ArrayList<Book> booksOfAccount = null;
 
-        if(!Service.getLoginUserPersistenceStub().loggedIn()) {
+        if(!Service.getLoginUserPersistence().loggedIn()) {
             throw new InvalidAccountException();
         }
 
-        for(int i = 0 ; i < accounts.size(); i++)
+        for(int i = 0 ; i < accountOfBooks.size(); i++)
         {
-            if(accounts.get(i).getUserName().equals(Service.getLoginUserPersistenceStub().getUsername()))
+            if(accounts.get(i).getUserName().equals(Service.getLoginUserPersistence().getUsername()))
             {
                 booksOfAccount = accountOfBooks.get(i);
             }
 
         }
+
+        if(booksOfAccount == null)
+            throw new BookNotFoundException();
         return booksOfAccount;
     }
 
