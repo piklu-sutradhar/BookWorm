@@ -3754,6 +3754,7 @@ public final class R {
     public static final int user_name_placeholer=0x7f0d0057;
     public static final int username=0x7f0d0058;
     public static final int visitor_login_prompt=0x7f0d0059;
+    public static final int warning=0x7f0d005a;
   }
   public static final class style {
     public static final int AlertDialog_AppCompat=0x7f0e0000;

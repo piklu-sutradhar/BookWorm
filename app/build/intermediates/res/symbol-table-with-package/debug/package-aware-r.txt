@@ -1149,6 +1149,7 @@ int string total_b4_tax 0x7f0d0056
 int string user_name_placeholer 0x7f0d0057
 int string username 0x7f0d0058
 int string visitor_login_prompt 0x7f0d0059
+int string warning 0x7f0d005a
 int style AlertDialog_AppCompat 0x7f0e0000
 int style AlertDialog_AppCompat_Light 0x7f0e0001
 int style Animation_AppCompat_Dialog 0x7f0e0002

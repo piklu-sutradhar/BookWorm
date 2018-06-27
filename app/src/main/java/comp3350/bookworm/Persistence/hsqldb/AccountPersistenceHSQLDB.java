@@ -44,7 +44,7 @@ public class AccountPersistenceHSQLDB implements AccountPersistence {
             st.setString(1, currentAccount.getUserName());
             st.setString(2, currentAccount.getPassword());
             final ResultSet rs = st.executeQuery();
-            if(rs.first())
+            if(rs.next())
                 account = fromResultSet(rs);
             rs.close();
             st.close();
