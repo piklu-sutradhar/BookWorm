@@ -1,13 +1,14 @@
 package comp3350.bookworm.Persistence.stubs;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import comp3350.bookworm.Objects.DuplicateUsernameException;
 import comp3350.bookworm.Objects.Account;
 import comp3350.bookworm.Persistence.AccountPersistence;
 
 public class AccountPersistenceStub implements AccountPersistence {
-    private ArrayList<Account> accounts;
+    private List<Account> accounts;
 
 
     public AccountPersistenceStub() {
@@ -68,7 +69,7 @@ public class AccountPersistenceStub implements AccountPersistence {
     }
 
     @Override
-    public ArrayList<Account> getAllAccounts() {
+    public List<Account> getAllAccounts() {
         return accounts;
     }
 }

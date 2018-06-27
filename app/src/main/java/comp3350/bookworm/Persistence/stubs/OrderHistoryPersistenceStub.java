@@ -1,6 +1,7 @@
 package comp3350.bookworm.Persistence.stubs;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import comp3350.bookworm.Application.Service;
 import comp3350.bookworm.Objects.BookNotFoundException;
@@ -11,8 +12,8 @@ import comp3350.bookworm.Persistence.OrderHistoryPersistence;
 
 
 public class OrderHistoryPersistenceStub implements OrderHistoryPersistence {
-    private ArrayList<Account> accounts;
-    private ArrayList<ArrayList<Book>> accountOfBooks;
+    private List<Account> accounts;
+    private List<ArrayList<Book>> accountOfBooks;
 
     public OrderHistoryPersistenceStub() {
         accounts = Service.getAccountPersistence().getAllAccounts();

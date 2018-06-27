@@ -9,13 +9,19 @@ import comp3350.bookworm.Persistence.AccountPersistence;
 import comp3350.bookworm.Persistence.LoginUserPersistence;
 
 public class AccountManager {
-    private final AccountPersistence accountPersistence;
-    private final LoginUserPersistence loginUserPersistence;
+    private AccountPersistence accountPersistence;
+    private LoginUserPersistence loginUserPersistence;
 
 
     public AccountManager() {
         accountPersistence = Service.getAccountPersistence();
         loginUserPersistence = Service.getLoginUserPersistence();
+    }
+
+    public AccountManager(final AccountPersistence accountPersistence, final LoginUserPersistence loginUserPersistence) {
+        this();
+        this.accountPersistence = accountPersistence;
+        this.loginUserPersistence = loginUserPersistence;
     }
 
     public void login (Account currentAccount) throws InvalidCredentialException {
