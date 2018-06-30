@@ -61,7 +61,7 @@ public class BookManagerTest {
         catch (BookNotFoundException e) {
             fail("Exception not expected");
         }
-         assertTrue(bookToTest.getBookName().equals("Java"));
+        assertTrue(bookToTest.getBookName().equals("Java"));
 
         System.out.println("Finishing test valid searchBook");
     }
@@ -255,7 +255,7 @@ public class BookManagerTest {
         accountManager.logout();
 
         try {
-             booklist = bookManager.getOrderHistoryForCurrentUser();
+            booklist = bookManager.getOrderHistoryForCurrentUser();
             fail("Fail expected");
         }
         catch (InvalidAccountException e) {
@@ -299,7 +299,48 @@ public class BookManagerTest {
         catch (BookNotFoundException e) {
 
         }
+        catch (BookNotFoundException e) {
+            fail("Exception not expected");
+        }
         assertNull(booklist);
+<<<<<<< HEAD
+        System.out.println("\nFinishing test invalid get order history no login");
+    }
+
+    @Test
+    public void testGetOrderHistoryNoHistory() {
+        System.out.println("\nStarting test get order history when there is no history");
+
+        ArrayList<Book> booklist = null;
+        String username = "new account";
+        String password = "new password";
+        String email = "new@bookworm.ca";
+        Account newAccount = new Account(username, password, email);
+
+        try {
+            accountManager.singup(newAccount);
+            accountManager.login(newAccount);
+            booklist = bookManager.getOrderHistoryForCurrentUser();
+            fail("Fail expected");
+        }
+        catch (InvalidAccountException e) {
+            fail("Exception not expected");
+        }
+        catch (DuplicateUsernameException e){
+            fail("Exception not expected");
+        }
+        catch (InvalidCredentialException e) {
+            fail("Exception not expected");
+        }
+        catch (InvalidEmailAddressException e) {
+            fail("Exception not expected");
+        }
+        catch (BookNotFoundException e) {
+
+        }
+        assertNull(booklist);
+=======
+>>>>>>> 2b17445c3714948d4abe2bc41d5fd6aeb12378b9
         accountManager.logout();
         System.out.println("\nFinishing test get order history when this is no history");
     }

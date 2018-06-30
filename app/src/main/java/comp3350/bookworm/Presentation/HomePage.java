@@ -1,6 +1,9 @@
 package comp3350.bookworm.Presentation;
 
+import android.app.AlertDialog;
+import android.content.Context;
 import android.content.Intent;
+import android.content.res.AssetManager;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -13,8 +16,13 @@ import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 
+import comp3350.bookworm.Application.Main;
 import comp3350.bookworm.Application.Service;
 import comp3350.bookworm.BusinessLogic.BookManager;
 import comp3350.bookworm.Objects.Book;
@@ -48,7 +56,10 @@ public class HomePage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
 
+        copyDatabaseToDevice();
+
         bookManager = new BookManager();
+
 
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.home_page_navigation);
         navigation.setSelectedItemId(R.id.navigation_discover);
@@ -61,6 +72,64 @@ public class HomePage extends AppCompatActivity {
         listView.setAdapter(bestsellerBookArrayAdapter);
 
 
+    }
+
+    private void copyDatabaseToDevice() {
+        final String DB_PATH = "db";
+
+        String[] assetNames;
+        Context context = getApplicationContext();
+        File dataDirectory = context.getDir(DB_PATH, Context.MODE_PRIVATE);
+        AssetManager assetManager = getAssets();
+
+        try {
+
+            assetNames = assetManager.list(DB_PATH);
+            for (int i = 0; i < assetNames.length; i++) {
+                assetNames[i] = DB_PATH + "/" + assetNames[i];
+            }
+
+            copyAssetsToDirectory(assetNames, dataDirectory);
+
+            Main.setDBPathName(dataDirectory.toString() + "/" + Main.getDBPathName());
+
+        } catch (final IOException ioe) {
+            AlertDialog alertDialog = new AlertDialog.Builder(this).create();
+
+            alertDialog.setTitle(this.getString(R.string.warning));
+            alertDialog.setMessage("Unable to access application data: " + ioe.getMessage());
+
+            alertDialog.show();
+        }
+    }
+
+    public void copyAssetsToDirectory(String[] assets, File directory) throws IOException {
+        AssetManager assetManager = getAssets();
+
+        for (String asset : assets) {
+            String[] components = asset.split("/");
+            String copyPath = directory.toString() + "/" + components[components.length - 1];
+
+            char[] buffer = new char[1024];
+            int count;
+
+            File outFile = new File(copyPath);
+
+            // TODO: add "true ||" to overwrite file
+            if (true || !outFile.exists()) {
+                InputStreamReader in = new InputStreamReader(assetManager.open(asset));
+                FileWriter out = new FileWriter(outFile);
+
+                count = in.read(buffer);
+                while (count != -1) {
+                    out.write(buffer, 0, count);
+                    count = in.read(buffer);
+                }
+
+                out.close();
+                in.close();
+            }
+        }
     }
 
 }

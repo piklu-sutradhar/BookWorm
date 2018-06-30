@@ -87,7 +87,7 @@ public class BookListPersistenceStub implements BookListPersistence {
             {
                 if(current.getBookName().contains(text.substring(i,1)))
                 {
-                  letterMatched++;
+                    letterMatched++;
                 }
             }
             if(letterMatched == text.length())

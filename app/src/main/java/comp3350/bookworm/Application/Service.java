@@ -4,6 +4,10 @@ import comp3350.bookworm.Persistence.AccountPersistence;
 import comp3350.bookworm.Persistence.BookListPersistence;
 import comp3350.bookworm.Persistence.LoginUserPersistence;
 import comp3350.bookworm.Persistence.OrderHistoryPersistence;
+<<<<<<< HEAD
+=======
+import comp3350.bookworm.Persistence.hsqldb.AccountPersistenceHSQLDB;
+>>>>>>> 2b17445c3714948d4abe2bc41d5fd6aeb12378b9
 import comp3350.bookworm.Persistence.stubs.AccountPersistenceStub;
 import comp3350.bookworm.Persistence.stubs.BookListPersistenceStub;
 import comp3350.bookworm.Persistence.stubs.LoginUserPersistenceStub;
@@ -19,7 +23,13 @@ public class Service {
     public static synchronized AccountPersistence getAccountPersistence()
     {
         if (accountPersistence == null) {
+<<<<<<< HEAD
             accountPersistence = new AccountPersistenceStub();
+=======
+//            accountPersistence = new AccountPersistenceStub();
+            accountPersistence = new AccountPersistenceHSQLDB(Main.getDBPathName());
+
+>>>>>>> 2b17445c3714948d4abe2bc41d5fd6aeb12378b9
         }
         return accountPersistence;
     }

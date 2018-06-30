@@ -17,7 +17,7 @@ public class BookManager {
     private BookListPersistence bookListPersistence;
     private OrderHistoryPersistence orderHistoryPersistence;
 
-    public BookManager(){
+    public BookManager() {
         bookListPersistence = Service.getBookListPersistence();
         orderHistoryPersistence = Service.getOrderHistoryPersistence();
     }
@@ -26,7 +26,7 @@ public class BookManager {
         bookListPersistence.insertBook(bookToadd);
     }
 
-    public Book searchBook(String bookName) throws BookNotFoundException{
+    public Book searchBook(String bookName) throws BookNotFoundException {
         return bookListPersistence.getBook(bookName);
     }
 
@@ -34,9 +34,8 @@ public class BookManager {
         bookListPersistence.deleteBook(bookName);
     }
 
-    public ArrayList<Book> getBookList()
-    {
-       return bookListPersistence.getBookList();
+    public ArrayList<Book> getBookList() {
+        return bookListPersistence.getBookList();
     }
 
     public static ArrayList<Book> getBestSellerList(ArrayList<Book> baseList) {
@@ -45,8 +44,7 @@ public class BookManager {
         return baseList;
     }
 
-    public ArrayList<Book> getOrderHistoryForCurrentUser() throws InvalidAccountException, BookNotFoundException{
+    public ArrayList<Book> getOrderHistoryForCurrentUser() throws InvalidAccountException, BookNotFoundException {
         return orderHistoryPersistence.getOrderHistoryCurrentUser();
     }
-
 }
